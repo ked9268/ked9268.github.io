@@ -1,0 +1,100 @@
+#wonder {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 150%;
+}
+#dropdown {
+    position: relative;
+    z-index: 1;
+}
+#wonder:hover {
+    position: relative;
+    background-color: green;
+    z-index:1;
+}
+.content {
+    position: relative;
+    display: none;
+    z-index: 1;
+}
+
+#dropdown:hover .content {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+input {
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+body {
+    background-color: silver;
+    overflow-x: hidden;
+}
+li {
+    list-style-type: none;
+}
+.navbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 150%;
+    color: black;
+    z-index: 1;
+}
+.navbar:hover {
+    position: relative;
+    background-color: yellow;
+    text-decoration: none;
+    z-index:1;
+    }
+a:link {
+    position: relative;
+    color: darkblue; 
+    text-decoration: none;
+}
+a:visited {
+    position: relative;
+    color: transparent;
+    text-decoration: none;
+}
+#info {
+    text-align: center;
+}
+h1 {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+img {   
+    max-height:300px;
+    max-width:300px;
+}
+.videos {
+    border-style: solid;
+    border-width: 5px;
+    max-height: 300px;
+    max-width: 300px;
+    position: fixed;
+    top: 200px;
+}
+#5852div {
+    position: fixed;
+    top: 200px;
+    z-index: 0;
+}
+#oceanjpg {
+    position: absolute;
+    top: 100px;
+}
+#earthjpeg {
+    position:absolute;
+    top :425px;
+}
+#randomGeneratorText {
+    position: absolute;
+    top: 65px;
+    left: 500px;
+}
