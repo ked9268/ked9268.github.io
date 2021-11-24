@@ -6,57 +6,34 @@
     <meta charset="UTF-8">
     <title>wonder.tv🌊🌊</title>
     <style>
-        /*a {
-                top: 50px;
-                color: red;
-                max-width: 1px;
-                max-length: 1px;
-                position: absolute;
-                left: 100px
-            }
-              */
         #common_super_twitter {
             position: absolute;
             top: 100px;
             left: 300px;
         }
-
         #kim_kardashian_twitter {
             position: absolute;
             top: 100px;
-            left: 600px;
+            left: 900px;
         }
-
         #lilbaby-wepaid {
             position: absolute;
             top: 400px;
             left: 300px;
         }
-
         #chiefkeef-idontlike {
             position: absolute;
             top: 400px;
             left: 600px;
         }
-        /*#contact_form {
-                    position: relative;
-                    top: 50px;
-                    left: 150px;
-                    }
-            #gallery {
-                    position: relative;
-                    top : 50px;
-                    left : 150px;
-                    }
-            #remove_image {
-                    position: relative;
-                    top: 50px;
-                    left: 150px;
-              }
-                */
+        #info {
+        	position: absolute;
+        	left: 75%;
+        	top : 80%;
+        }
     </style>
 </head>
-<body onload="checkSize()" id="body">
+<body onload="checkSize()" onpagehide="bounce()" id="body">
     <div id="dropdown">
         <a id="wonder">wonder.tv</a>
         <div class="content">
@@ -86,10 +63,9 @@
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     <div id="info">
-    <p id="date" onclick="showDate()">Date </p>
-    <p id="showDate">Hello World!</p>
-    <p id="width"></p>
+    	<p id="date"></p>
+    	<p id="showDate">Hello World!</p>
+    	<p id="width"></p>
     </div>
-
 </body>
 </html>
