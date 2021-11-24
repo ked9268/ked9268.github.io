@@ -25,8 +25,10 @@
     function trackMouse(event) {
         var x = event.clientX;
         var y = event.clientY;
-        
-        console.log("X coordinate " + x + " Y coordinate " + y);
+        var ret = "X coordinate " + x + " Y coordinate " + y
+        console.log(ret);
+		var edit = document.getElementById("showLocation");
+		edit.innerHTML = ret;
         }
     function randomNumber() {
         randomNumber = Math.round(Math.random()*100);

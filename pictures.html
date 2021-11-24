@@ -6,6 +6,23 @@
     </title>
     <link rel="stylesheet" href="base.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+    #circle {
+    		cursor: move;
+    		}
+    </style>
+    <script>
+    		function dragStart(event){
+			alert('Help me!')
+	}
+    		function start(){
+			console.log('started');
+    }
+    		function end(){
+			console.log('ended');
+    }
+    </script>>
 </head>
 <body>
     <div id="dropdown">
@@ -25,5 +42,7 @@
     <h1>
         Pictures page
     </h1>
+    <div id=circle draggable=true ondragstart="start()" ondragend="end()"">
+    </div>
 </body>
 </html>
