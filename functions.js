@@ -47,11 +47,9 @@
         document.getElementById("width").innerHTML = "width: " + c + "," + "height: " + d + "  " + e;
 		showDate();
     }
-	function  relocate(){
+	function  switchColour(){
 		var edit = document.getElementById("circle");
 		var value = window.getComputedStyle( edit ,null).getPropertyValue('background-color'); 
-		console.log("relocate method initiated");
-		console.log(value);
 		if(value === "rgb(255, 0, 0)"){
 			edit.style.backgroundColor = "rgb(0, 255, 0)";
 		}
