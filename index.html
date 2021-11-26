@@ -9,33 +9,48 @@
     <style>
         #common_super_twitter {
             position: absolute;
-            top: 100px;
-            left: 300px;
+            top: 15%;
+            left: 15%;
         }
         #kim_kardashian_twitter {
             position: absolute;
-            top: 100px;
-            left: 900px;
+            top: 25%;
+            left: 25%;
         }
         #lilbaby-wepaid {
             position: absolute;
-            top: 400px;
-            left: 300px;
+            top: 75%;
+            left: 65%;
         }
         #chiefkeef-idontlike {
             position: absolute;
-            top: 400px;
-            left: 600px;
-        }
-        #info {
-        	position: absolute;
-        	left: 75%;
-        	top : 80%;
+            top: 50%;
+            left: 50%;
         }
     </style>
 </head>
-<body onload="checkSize()" onpagehide="bounce()" id="body">
-    <div id="dropdown">
+<body onload="checkSize()" onresize="checkSize()"onpagehide="bounce()" id="body">
+    </div>
+    <div id="chiefkeef-idontlike">
+        <iframe src="https://open.spotify.com/embed/track/1h6kgem1ai8vUgO1rZOwfB" width="80%" height="100" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div id="lilbaby-wepaid">
+        <iframe src="https://open.spotify.com/embed/track/6gxKUmycQX7uyMwJcweFjp" width="80%" height="100" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div id="common_super_twitter">
+        <a class="twitter-timeline" id="common_super_twitter" data-width="20%" data-height="20%" href="https://twitter.com/common_super?ref_src=twsrc%5Etfw">Tweets by common_super</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">documentdocumentdocument</script>
+    </div>
+    <div id="kim_kardashian_twitter" draggable="true">
+        <a class="twitter-timeline" data-width="20%" data-height="20%" href="https://twitter.com/KimKardashian?ref_src=twsrc%5Etfw">Tweets by KimKardashian</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div id="info">
+    	<p id="date"></p>
+    	<p id="showDate">Hello World!</p>
+    	<p id="width"></p>
+    </div>
+      <div id="dropdown">
         <a id="wonder">wonder.tv</a>
         <div class="content">
             <li class="navbar"><a href="index.html">home</a></li>
@@ -48,25 +63,5 @@
             <li class="navbar"><a href="gallery.html">gifs</a></li>
             <li class="navbar"><a>banners</a></li>
         </div>
-    </div>
-    <div id="chiefkeef-idontlike">
-        <iframe src="https://open.spotify.com/embed/track/1h6kgem1ai8vUgO1rZOwfB" width="30%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div id="lilbaby-wepaid">
-        <iframe src="https://open.spotify.com/embed/track/6gxKUmycQX7uyMwJcweFjp" width="30%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div id="common_super_twitter">
-        <a class="twitter-timeline" id="common_super_twitter" data-width="220" data-height="200" href="https://twitter.com/common_super?ref_src=twsrc%5Etfw">Tweets by common_super</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">documentdocumentdocument</script>
-    </div>
-    <div id="kim_kardashian_twitter" draggable="true">
-        <a class="twitter-timeline" data-width="220" data-height="200" href="https://twitter.com/KimKardashian?ref_src=twsrc%5Etfw">Tweets by KimKardashian</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    <div id="info">
-    	<p id="date"></p>
-    	<p id="showDate">Hello World!</p>
-    	<p id="width"></p>
-    </div>
 </body>
 </html>

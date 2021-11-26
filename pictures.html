@@ -5,26 +5,41 @@
         Pictures page
     </title>
     <link rel="stylesheet" href="base.css">
+    <script src="functions.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
     
     #circle {
     		cursor: move;
-    		}
+    		}  
     </style>
     <script>
-    		function dragStart(event){
-			alert('Help me!')
-	}
-    		function start(){
-			console.log('started');
-    }
-    		function end(){
-			console.log('ended');
-    }
-    </script>>
+    		function drop(event){
+    			var x1 = event.screenX;
+    	        var y1 = event.screenY;
+    	        var retN = "X coordinate " + x1 + " Y coordinate " + y1 + "  Whole screen!";
+    	        var x = event.clientX;
+    	        var y = event.clientY;
+    	        var ret = "\n X coordinate " + x + " Y coordinate " + y + " Viewport! ";
+    	        var text = retN + ret;
+				alert(text)
+    		}
+    		function getViewPort(){
+				
+    		}
+    </script>
 </head>
-<body>
+<body onresize="checkSize()">
+<h1>
+        Pictures page
+    </h1>
+    <div id=circle draggable=true ondragstart="" ondragend="drop(event)">
+    </div>
+     <div id="info">
+    	<p id="date"></p>
+    	<p id="showDate">Hello World!</p>
+    	<p id="width"></p>
+    </div>
     <div id="dropdown">
         <a id="wonder">wonder.tv</a>
         <div class="content">
@@ -39,10 +54,6 @@
             <li class="navbar"><a>banners</a></li>
         </div>
     </div>
-    <h1>
-        Pictures page
-    </h1>
-    <div id=circle draggable=true ondragstart="start()" ondragend="end()"">
-    </div>
+    
 </body>
 </html>

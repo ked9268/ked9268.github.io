@@ -1,7 +1,7 @@
 #wonder {
     position: relative;
     display: block;
-    width: 100%;
+    width: 10%;
     font-size: 150%;
 }
 #circle {
@@ -18,6 +18,11 @@
     position: relative;
     z-index: 1;
 }
+#info {
+       position: absolute;
+       left: 75%;
+       top : 80%;
+        }
 #wonder:hover {
     position: relative;
     background-color: green;
@@ -49,7 +54,7 @@ li {
 .navbar {
     position: relative;
     display: block;
-    width: 100%;
+    width: 10%;
     font-size: 150%;
     color: black;
     z-index: 1;
