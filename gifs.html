@@ -3,12 +3,33 @@
     <head>
         <script src="functions.js"></script>
         <title>
-            gallery page
+            GIF PAGE
         </title>
         <link rel="stylesheet" href="base.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        
+        @keyframes circle {
+        
+        0% {background-color: red;}
+        25% { background-color: green; }
+        50% { background-color: yellow; }
+        75%  { background-color: blue; }
+        100% { background-color: orange; }
+        }
+        #circle{
+        		animation-name: circle;
+        		animation-duration: 4s;
+        		animation-delay: 2s;
+        		animation-iteration-count: infinite;
+        }
+        </style>
+        
     </head>
     <body>
+    <div id=circle></div>
+    <div id=triangleUp> </div>
+    <div id=triangleDown ></div>
         <div id="dropdown">
             <a id="wonder">wonder.tv</a>
             <div class="content">
@@ -19,19 +40,9 @@
                 <li class="navbar"><a href="pictures.html">pictures</a></li>
                 <li class="navbar"><a href="videos.html">videos</a></li>
                 <li class="navbar"><a>sounds</a></li>
-                <li class="navbar"><a href="gallery.html">gifs</a></li>
+                <li class="navbar"><a href="gifs.html">gifs</a></li>
                 <li class="navbar"><a>banners</a></li>
             </div>
-        </div>
-        <h1>
-            GIF Page
-        </h1>
-        <div id="oceanjpg">
-            <img src="ocean.jpg">
-        </div>
-        <div id="earthjpeg">
-            <img src="earth.jpeg" id="earth.jpeg">
-        </div>
-
+        </div>  
     </body>
     </html>
