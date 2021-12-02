@@ -1,6 +1,3 @@
-	function bounce(){
-		alert('See me again!');
-	}	
     function changeTextOperation() {
         document.getElementById("randomGeneratorText").remove();
         var input = document.createElement("input");
