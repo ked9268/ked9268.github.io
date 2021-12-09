@@ -18,9 +18,40 @@
     		top:25%;
     		left: 50%;
     	}
+    	#favcolor{
+    		position: absolute;
+    		top: 25%;
+    		left: 25;
+    		
+    	}
+    	#wondertv_phone{
+    		position: absolute;
+    		top: 75%;
+    		left: 15%;	
+    	
+    	}
+    	#contact_phone{
+    		position: absolute;
+    		top: 78%;
+    		left: 15%;
+    		display:none;
+    	}
     </style>
+    <script>
+		function getColor(){
+		console.log(document.getElementById("favcolor").value);
+		document.body.style.backgroundColor = document.getElementById("favcolor").value;
+		}
+		function showMenu(){
+
+			document.getElementById("contact_phone").style.display = " "; 
+		
+		}
+	</script>
 </head>
 <body>
+<a id="wondertv_phone" onclick="showMenu()" >WONDER.TV </a>
+<a id="contact_phone" >CONTACT </a>
     <div id="dropdown">
         <a id="wonder">wonder.tv</a>
         <div class="content">
@@ -37,5 +68,7 @@
     </div>
     <input type="button" value="Return mouse location" id="clickmee" onclick="trackMouse(event)">
 	<p id="showLocation">Show mouse location</p>
+	<input type="color" id="favcolor" name="favcolor" value="#7f00ff" onmouseout="getColor()">
+	
 </body>
 </html>
