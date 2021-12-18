@@ -1,53 +1,18 @@
+a:link {
+    position: relative;
+    color: darkblue; 
+    text-decoration: none;
+}
+a:visited {
+    position: relative;
+    color: transparent;
+    text-decoration: none;
+}
 body {
     background-color: violet;
     border-right: 25px dotted coral;
     overflow-x: hidden;
 }
-#wonder {
-    position: relative;
-    display: block;
-    width: 10%;
-    font-size: 150%;
-}
-#circle {
-		position: absolute;
-    	top: 50%;
-    	left: 50%; 
-		height: 50px;
-  		width: 50px;
- 		background-color: #555;
- 		border-radius: 50%;
- 		background-color: rgb(255,0,0);
-}
-#triangleUp {
-	position:absolute;
-	width: 0;
-	height: 0;
-	top:25%;
-	left:25%;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid #555;
-}
-#triangleDown{
-	position:absolute;
-	width: 0;
-	height: 0;
-	top:27%;
-	left:25%;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #555;
-}
-#dropdown {
-    position: relative;
-    z-index: 1;
-}
-#info {
-       position: absolute;
-       left: 75%;
-       top : 80%;
-        }
 #wonder:hover {
     position: relative;
     background-color: green;
@@ -86,16 +51,6 @@ li {
     text-decoration: none;
     z-index:1;
     }
-a:link {
-    position: relative;
-    color: darkblue; 
-    text-decoration: none;
-}
-a:visited {
-    position: relative;
-    color: transparent;
-    text-decoration: none;
-}
 h1 {
     position: absolute;
     top: 200px;
@@ -110,20 +65,51 @@ img {
     border-width: 5px;
     max-height: 300px;
     max-width: 300px;
+} 
+#circle {
+	position: absolute;
+    top: 50%;
+    left: 50%; 
+	height: 50px;
+  	width: 50px;
+ 	background-color: #555;
+ 	border-radius: 50%;
+ 	background-color: rgb(255,0,0);
 }
-#5852div {
-    position: fixed;
-    top: 200px;
-    z-index: 0;
+#square{
+	position: absolute;
+    top: 80%;
+    left: 50%; 
+	height: 50px;
+  	width: 50px;
+ 	background-color: #555;
+ 	background-color: rgb(255,0,0);
+ 	opacity:0.5;
 }
-#oceanjpg {
-    position: absolute;
-    top: 100px;
+#dropdown {
+    position: relative;
+    z-index: 1;
 }
 #earthjpeg {
     position:absolute;
-    top :425px;
+    top :65%;
+    left :3%;
 }
+#happy_dogDIV{
+	position:absolute;
+	left:600px;
+}
+#info {
+       position: absolute;
+       left: 75%;
+       top : 80%;
+        }
+#oceanjpg {
+    position: absolute;
+    top: 10%;
+    left:23%;
+    z-index: -1;
+} 
 #randomGeneratorText {
     position: absolute;
     top: 35%;
@@ -133,4 +119,40 @@ img {
     position: absolute;
     top: 35%;
     left: 65%;
+}
+#steve_working_outDIV{
+	position:absolute;
+	left:750px;
+	top: 300px;
+}
+#triangleUp {
+	position:absolute;
+	width: 0;
+	height: 0;
+	top:25%;
+	left:25%;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;
+}
+#triangleDown{
+	position:absolute;
+	width: 0;
+	height: 0;
+	top:27%;
+	left:25%;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+}
+#maximizeDIV{
+	position: absolute;
+	left: 250px;
+	top: 250px;
+}
+#wonder {
+    position: relative;
+    display: block;
+    width: 10%;
+    font-size: 150%;
 }

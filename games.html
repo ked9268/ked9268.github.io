@@ -45,9 +45,44 @@
 		function showMenu(){
 			document.getElementById("contact_phone").style.display = " "; 
 		}
+  		function drop(event){
+  			var x1 = event.screenX; //location of the mouse in propertion to the whole screen 
+  	        var y1 = event.screenY; 
+  	        var retN = "X coordinate " + x1 + " Y coordinate " + y1 + "  mouse within the whole screen";
+  	        var x = event.clientX; // location of the mouse within propertion to the browser  
+  	        var y = event.clientY;
+  	        var ret = "\n X coordinate " + x + " Y coordinate " + y + " mouse within the browser ";
+  	        var y3 = window.innerWidth; // This is what the checkSize method is using calculates the view port 
+  	        var x3 = window.innerHeight;  // Size of the browser
+  	        var moveX = "\n "+x1/x3;
+  	        var moveY = "\n "+y1/y3;
+  	        var screenY = screen.width; // Size of the screen 
+  	        var screenX = screen.height;
+  	        var screenRet = "\n Height: "+screenX+ " Width: "+screenY;
+  	        var originY = screenY - y3
+  	        var originX = screenX - x3;
+  	        var originRet = "\n("+originX+","+originY+")";
+  	        var positionOfDropX = x1/screenY * 100;
+  	        var positionOfDropY = y1/screenX * 100;
+  	        var text = retN + ret + moveX + moveY +"innerWidth:"+y3+ "innerHeight"+x3 +"\n"+ screenRet +originRet+ +"\n"+ positionOfDropX +"\n"+ positionOfDropY;
+  	        var circle = document.getElementById("circle");
+  	        circle.style.left = positionOfDropX + "%";
+  	        circle.style.top = positionOfDropY + "%";
+  	        
+				//alert(text)
+			
+  		}
+  		function getViewPort(){
+				
+  		}
+  </script>
 	</script>
 </head>
-<body>
+<body onclick="trackMouse(event)">
+ <div id=circle draggable=true ondragstart="" ondragend="drop(event)">
+    </div>
+<div id=square>
+    </div>    
 <a id="wondertv_phone" onclick="showMenu()" >WONDER.TV </a>
 <a id="contact_phone" >CONTACT </a>
     <div id="dropdown">
@@ -64,8 +99,7 @@
             <li class="navbar"><a>banners</a></li>
         </div>
     </div>
-    <input type="button" value="Return mouse location" id="clickmee" onclick="trackMouse(event)">
-	<p id="showLocation">Show mouse location</p>
+    
 	<input type="color" id="favcolor" name="favcolor" value="#7f00ff" onmouseout="getColor()">
 	
 </body>
