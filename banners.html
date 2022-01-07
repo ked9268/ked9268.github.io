@@ -5,15 +5,41 @@
 	<link rel="stylesheet" href="base.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-<title>banners</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>banners</title>
+	<style>
+	
+	table, th, td {
+  		border: 1px solid black;
+  		border-collapse: collapse;
+		}
+	</style>
 </head>
 <body>
 		<select id="where">
-			<option value="RLBag">Ralph Lauren Bag</option>
-			<option value="MBag">Maroon Bag</option>
-			<option value="GBag">Green Bag</option>
-			<option value="C1Bag"> ClearBox 1</option>
-		
+			<option value="RLBag" id="RLBagID"> Ralph Lauren Bag</option>
+			<option value="MBag" id="MBagID"> Maroon Bag</option>
+			<option value="GBag" id="GBagID"> Green Bag</option>
+			<option value="C1Bag" id=C1BagID> ClearBox 1</option>	
 		</select>
+		<button type="button" onclick="getValue()">
+		</button>
+		<table>
+		  <tr>
+		  	<th>Ralph Lauren Bag </th>
+		  	<th>Maroon Bag </th>
+		  	<th>Green Bag </th>
+		  	<th>ClearBox1 </th>
+		  </tr>
+		  <tr>
+		  	
+		  
+		  </tr>
+		</table>
+		<script>
+				function getValue(){
+						console.log(document.getElementById("where").value);
+				}
+		</script>
 </body>
 </html>
