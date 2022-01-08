@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="website2/assets"/>
+	<classpathentry kind="lib" path="newfile.php"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -24,7 +24,7 @@
 		</select>
 		<button type="button" onclick="getValue()">
 		</button>
-		<table>
+		<table id="table">
 		  <tr>
 		  	<th>Ralph Lauren Bag </th>
 		  	<th>Maroon Bag </th>
@@ -36,6 +36,12 @@
 		  
 		  </tr>
 		</table>
+		<?php
+			function writeMsg() {
+  				echo "Hello world!";
+			}
+			writeMsg(); // call the function
+		?>
 		<script>
 				function getValue(){
 						console.log(document.getElementById("where").value);
