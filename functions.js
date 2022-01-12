@@ -1,3 +1,6 @@
+    see = 3;
+    currently = 0;
+
     function changeTextOperation() {
         document.getElementById("randomGeneratorText").remove();
         var input = document.createElement("input");
@@ -54,21 +57,46 @@
 		var list = document.querySelectorAll("div");
 		var size = list.length;
 		var array = [];
-		for(let i = 0;i < size;i++){		
+		/**for(let i = 0;i < size;i++){
 			var cid = document.getElementById(list.item(i).id);
 		
 			if(window.getComputedStyle(cid,null).getPropertyValue('z-index') === 'auto'){
-				console.log('true');
+				array.push(' ');
 			}
 			else{
-				array[i] = window.getComputedStyle(cid,null).getPropertyValue('z-index');	
+				array[i] = window.getComputedStyle(cid,null).getPropertyValue('z-index');
 			}
-		}
-		console.log(array);
+		}**/
+		//console.log(array);
+        //console.log(value);
+        window.getComputedStyle(document.getElementById(value),null).getPropertyValue('z-index');
+        document.getElementById(value).style.zIndex = see;
+        see = see+1;
 		//Set to Two
 		//document.getElementById("kim_kardashian_twitter").style.setProperty("z-index","2")
 		//console.log("Play:  "+window.getComputedStyle(document.getElementById("kim_kardashian_twitter",null)).getPropertyValue('z-index'));
 	}
+    function getAllZIndex(){
+        var list = document.querySelectorAll("div");
+        //console.log(list);
+        size = list.length;
+        console.log(size);
+        
+        for(let i = 0; i < size;i++){
+            //console.log(max);
+            
+            //var cid = document.getElementById(list.item(i).id);
+            //console.log(list.item(i).id);
+            //console.log(cid);
+            //var value = window.getComputedStyle(cid,null).getPropertyValue('z-index');
+            //if(value != 'auto'){
+             //   if(value > max){
+              //      max = value;
+             //   }
+            //}
+        }max = 1;
+        console.log(max);
+    }
   	function userCustomRandom() {
 	//Return
         var random = document.getElementById("number").value;

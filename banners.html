@@ -36,15 +36,16 @@
 		  
 		  </tr>
 		</table>
-		<?php
-			function writeMsg() {
-  				echo "Hello world!";
-			}
-			writeMsg(); // call the function
-		?>
+		<button onclick="sendRequest() "> Connect</button>
 		<script>
 				function getValue(){
 						console.log(document.getElementById("where").value);
+				}
+				function sendRequest(){
+                	console.log("Hello World");
+					var xhttp = new XMLHttpRequest();
+					xhttp.open("GET","newfile.php",true);
+					xhttp.send();
 				}
 		</script>
 </body>

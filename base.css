@@ -15,17 +15,20 @@ body {
 }
 #wonder:hover {
     position: relative;
+    width:200px;
     background-color: green;
     z-index: 1;
 }
 .content {
     position: relative;
+    width:200px;
     display: none;
     z-index: 1;
 }
 
 #dropdown:hover .content {
     position: relative;
+    width:200px;
     display: block;
     z-index: 1;
 }
@@ -40,14 +43,14 @@ li {
 .navbar {
     position: relative;
     display: block;
-    width: 10%;
+    width: 100%;
     font-size: 150%;
     color: black;
     z-index: 1;
 }
 .navbar:hover {
     position: relative;
-    background-color: yellow;
+    background-color: green;
     text-decoration: none;
     z-index:1;
     }
@@ -76,6 +79,11 @@ img {
  	border-radius: 50%;
  	background-color: rgb(255,0,0);
 }
+#connectwithsc{
+	position:absolute;
+	top :22%;
+	left:22%;
+}
 #square{
 	position: absolute;
     top: 80%;
@@ -88,6 +96,8 @@ img {
 }
 #dropdown {
     position: relative;
+    top:-75px;
+    left:-50px;
     z-index: 1;
 }
 #earthjpeg {
@@ -103,7 +113,7 @@ img {
        position: absolute;
        left: 75%;
        top : 80%;
-        }
+       }
 #oceanjpg {
     position: absolute;
     top: 10%;
@@ -119,6 +129,23 @@ img {
     position: absolute;
     top: 35%;
     left: 65%;
+}
+#ezDIV {
+	position:absolute;
+	top:500px;
+	left:500px;
+}
+#logo{
+	position:absolute;
+	top:-150px;
+	left:-50px;
+	width:75px;
+	height:75px;
+}
+#spotifyLogo{
+	position:absolute;
+	top :22%;
+	left:42%;
 }
 #steve_working_outDIV{
 	position:absolute;
@@ -144,6 +171,11 @@ img {
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
 	border-top: 50px solid #555;
+}
+#move{
+		position:absolute;
+		top:150px;
+		left:70px;
 }
 #maximizeDIV{
 	position: absolute;
