@@ -29,10 +29,18 @@
     
     function showElements(){
 	
-    		document.getElementById("home").style.display = "none";
-    		document.getElementById("contact").style.display ="none";
-    		document.getElementById("games").style.display ="none";
-    
+    		if(window.getComputedStyle(document.getElementById("mainbody"),null).getPropertyValue('display') === "none"){
+
+    			document.getElementById("mainbody").style.display = "inline";
+    		
+    		}
+    		else{
+    			document.getElementById("mainbody").style.display = "none";
+    		
+    		}
+		
+    		
+    		
     }
     
     </script>
