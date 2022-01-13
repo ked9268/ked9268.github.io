@@ -20,7 +20,7 @@
     			left:35%;
     	}
     	#mainbody{
-    	
+    			display: none;
     				
     	
     	}
@@ -29,13 +29,13 @@
     
     function showElements(){
 	
-    		if(window.getComputedStyle(document.getElementById("mainbody"),null).getPropertyValue('display') === "none"){
+    		if(window.getComputedStyle(document.getElementById("mainbody"),null).getPropertyValue('display') === "inline"){
 
-    			document.getElementById("mainbody").style.display = "inline";
+    			document.getElementById("mainbody").style.display = "none";
     		
     		}
     		else{
-    			document.getElementById("mainbody").style.display = "none";
+    			document.getElementById("mainbody").style.display = "inline";
     		
     		}
 		

@@ -25,6 +25,12 @@
 	        var e = navigator.platform;
 	        //document.getElementById("body").setAttribute("max-width", c + "px");
 	        document.getElementById("width").innerHTML = "width: " + c + "," + "height: " + d + "  " + e;
+         if(e === "iPhone"){
+             //Remove lines of code removeChild method 
+         }
+         else {
+             //Remove lines of codee
+         }
 			showDate();
 	    }
     function randomNumber() {
