@@ -27,7 +27,13 @@
     </style>
     <script>
     
+    function showElements(){
+	
+    		document.getElementById("home").style.display = "none";
+    		document.getElementById("contact").style.display ="none";
+    		document.getElementById("games").style.display ="none";
     
+    }
     
     </script>
 </head>
@@ -52,7 +58,7 @@
     	<div id="name">
     		<a id="button"> WONDER</a>
      			<div id="mainbody">
-     				<li><a id="home" href="index.html">    home   </a></li>
+     				<li><a id="home" href="index.html" onclick="showElements()">    home   </a></li>
      				<li><a id="contact" href="contact.html"> contact </a></li>
      				<li><a>donation</a></li>
             		<li><a id="games"href="games.html"> games </a></li>
