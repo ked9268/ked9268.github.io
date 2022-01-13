@@ -42,6 +42,7 @@ li {
 }
 .navbar {
     position: relative;
+    display: block;
     width: 100%;
     font-size: 150%;
     color: black;
@@ -183,6 +184,7 @@ img {
 }
 #wonder {
     position: relative;
+    display: block;
     width: 10%;
     font-size: 150%;
 }
