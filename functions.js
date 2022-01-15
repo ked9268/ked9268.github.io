@@ -39,7 +39,7 @@
             //Remove lines of code removeChild method
             console.log("iPhone viewport")
             document.getElementById("link").href = "iPhone.css";
-            //document.getElementById("AmargsTwitter").data-width = "100%";
+            
         }
         else {
             //Remove lines of codee
