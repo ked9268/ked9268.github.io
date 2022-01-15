@@ -113,6 +113,7 @@
             //}
         }max = 1;
         console.log(max);
+        document.getElementById("link").href = "iPhone.css";
     }
   	function userCustomRandom() {
 	//Return

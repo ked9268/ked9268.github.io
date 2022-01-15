@@ -5,7 +5,7 @@
 
 <head>
     <script src="functions.js"></script>
-    <link rel="stylesheet" href="base.css">
+    <link id="link" rel="stylesheet" href="base.css">
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wonder.tv🌊🌊</title>
@@ -15,6 +15,12 @@
             top: 15%;
             left: 15%;
             z-index: 2;
+        }
+        #margs-twitter{
+        
+       			position: absolute;
+            	top: 15%;
+            	left: 65%;
         }
         #kim_kardashian_twitter {
             position: absolute;
@@ -38,7 +44,7 @@
             left: 50%;
         }
         #youtube_vybz_kartel{
-        	position: absolute;
+        	position: absolute; 
         	top:30%;
         	left: 80%;
         }
@@ -53,6 +59,10 @@
     <button id="getZIndex"onclick="getAllZIndex()">Get Items</button>
     <div id="chiefkeef-idontlike" onmouseover="getValue('chiefkeef-idontlike')">
         <iframe src="https://open.spotify.com/embed/track/1h6kgem1ai8vUgO1rZOwfB" width="80%" height="100" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div id="margs-twitter" onmouseover="getValue('margs-twitter')">
+    <a class="twitter-timeline" data-width="100%" data-height="20%" href="https://twitter.com/MargsMT?ref_src=twsrc%5Etfw">Tweets by MargsMT</a>
+     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     <div id="lilbaby-wepaid" onmouseover="getValue('lilbaby-wepaid')">
         <iframe src="https://open.spotify.com/embed/track/6gxKUmycQX7uyMwJcweFjp" width="80%" height="100" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
