@@ -23,16 +23,27 @@
 	        var c = window.innerWidth;
 	        var d = window.innerHeight;
 	        var e = navigator.platform;
+         
+         
 	        //document.getElementById("body").setAttribute("max-width", c + "px");
 	        document.getElementById("width").innerHTML = "width: " + c + "," + "height: " + d + "  " + e;
-         if(e === "iPhone"){
-             //Remove lines of code removeChild method 
-         }
-         else {
-             //Remove lines of codee
-         }
 			showDate();
+            whichViewPort();
 	    }
+    function whichViewPort(){
+        var c = window.innerWidth;
+        var d = window.innerHeight;
+        var e = navigator.platform;
+        
+        if(e === "iPhone"){
+            //Remove lines of code removeChild method
+            console.log("iPhone viewport")
+        }
+        else {
+            //Remove lines of codee
+            console.log("computer or Samsung viewport")
+        }
+    }
     function randomNumber() {
         randomNumber = Math.round(Math.random()*100);
         return randomNumber;
