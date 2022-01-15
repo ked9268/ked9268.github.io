@@ -38,6 +38,7 @@
         if(e === "iPhone"){
             //Remove lines of code removeChild method
             console.log("iPhone viewport")
+            document.getElementById("link").href = "iPhone.css";
         }
         else {
             //Remove lines of codee
