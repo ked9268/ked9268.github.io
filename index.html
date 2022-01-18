@@ -12,15 +12,14 @@
     <script>
     		function redirect(){
 					window.location.replace("pictures.html");
-    		}
-    
+    		}  
     </script>
 </head>
 <body onload="checkSize()" onresize="checkSize()" id="body">
     <button id="getZIndex"onclick="getAllZIndex()" ontouchend="getAllZIndex()">Get Items</button>
     <button id="remove" onclick="remove()">Remove</button>
     <button id="add" onclick="add()">Add</button>
-    <button id="redirect" onclick="redirect()"></button>
+    <button id="redirect" onclick="redirect()">Redirect</button>
     <div id="chiefkeef-idontlike" onmouseover="getValue('chiefkeef-idontlike')">
         <iframe src="https://open.spotify.com/embed/track/1h6kgem1ai8vUgO1rZOwfB" width="80%" height="100" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
@@ -33,21 +32,26 @@
     <div id="lilbaby-wepaid" onmouseover="getValue('lilbaby-wepaid')">
         <iframe src="https://open.spotify.com/embed/track/6gxKUmycQX7uyMwJcweFjp" width="80%" height="100" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
+    
     <div id="common_super_twitter" onmouseover="getValue('common_super_twitter')">
         <a class="twitter-timeline" id="common_super_twitter" data-width="20%" data-height="20%" href="https://twitter.com/common_super?ref_src=twsrc%5Etfw">Tweets by common_super</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">documentdocumentdocument</script>
     </div>
+    
     <div id="kim_kardashian_twitter" onmouseover="getValue('kim_kardashian_twitter')">
         <a class="twitter-timeline" data-width="20%" data-height="20%" href="https://twitter.com/KimKardashian?ref_src=twsrc%5Etfw">Tweets by KimKardashian</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
+    
     <div id="kevin_hart_twitter" onmouseover="getValue('kevin_hart_twitter')">
         <a class="twitter-timeline" data-width="220" data-height="200" href="https://twitter.com/KevinHart4real?ref_src=twsrc%5Etfw">Tweets by KevinHart4real</a> 
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
+    
     <div id="youtube_vybz_kartel" onmouseover="getValue('youtube_vybz_kartel')">
     <iframe width="150" height="315" src="https://www.youtube.com/embed/DAI9fBaO85M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    
     <div id="info">
     	<p id="date"></p>
     	<p id="showDate">Hello World!</p>
