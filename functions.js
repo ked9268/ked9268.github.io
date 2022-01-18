@@ -126,10 +126,3 @@
         console.log(print);
         document.getElementById("number").value = " ";
     }
-function remove(){
-        /**document.getElementById("margs-twitter").remove();**/
-        document.getElementById("AmargsTwitter").remove();
-}
-function add(){
-        document.getElementById("margs-twitter").innerHTML;
-}

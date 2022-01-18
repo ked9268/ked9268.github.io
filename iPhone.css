@@ -3,5 +3,6 @@
 body {
 	
 	background-color: blue;
-	
+	border-right: 25px dotted coral;
+    overflow-x: hidden;
 }
