@@ -9,11 +9,18 @@
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wonder.tv🌊🌊</title>
+    <script>
+    		function redirect(){
+					window.location.replace("pictures.html");
+    		}
+    
+    </script>
 </head>
 <body onload="checkSize()" onresize="checkSize()" id="body">
     <button id="getZIndex"onclick="getAllZIndex()" ontouchend="getAllZIndex()">Get Items</button>
     <button id="remove" onclick="remove()">Remove</button>
     <button id="add" onclick="add()">Add</button>
+    <button id="redirect" onclick="redirect()"></button>
     <div id="chiefkeef-idontlike" onmouseover="getValue('chiefkeef-idontlike')">
         <iframe src="https://open.spotify.com/embed/track/1h6kgem1ai8vUgO1rZOwfB" width="80%" height="100" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
