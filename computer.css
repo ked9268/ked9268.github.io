@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+body {
+    background-color: violet;
+    border-right: 25px dotted coral;
+    overflow-x: hidden;
+}
