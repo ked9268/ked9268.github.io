@@ -30,22 +30,53 @@
 			showDate();
             whichViewPort();
 	    }
-    function whichViewPort(){
-        var c = window.innerWidth;
-        var d = window.innerHeight;
-        var e = navigator.platform;
+    function getValue(value){
+            var list = document.querySelectorAll("div");
+            var size = list.length;
+            var array = [];
+            /**for(let i = 0;i < size;i++){
+                var cid = document.getElementById(list.item(i).id);
+    
+                if(window.getComputedStyle(cid,null).getPropertyValue('z-index') === 'auto'){
+             array.push(' ');
+             }
+             else{
+             array[i] = window.getComputedStyle(cid,null).getPropertyValue('z-index');
+             }
+             }**/
+            //console.log(array);
+            //console.log(value);
+            window.getComputedStyle(document.getElementById(value),null).getPropertyValue('z-index');
+            document.getElementById(value).style.zIndex = see;
+            see = see+1;
+            //Set to Two
+            //document.getElementById("kim_kardashian_twitter").style.setProperty("z-index","2")
+            //console.log("Play:        "+window.getComputedStyle(document.getElementById("kim_kardashian_twitter",null)).getPropertyValue('z-index'));
+    }
+    function getAllZIndex(){
+        var list = document.querySelectorAll("div");
+        //console.log(list);
+        size = list.length;
+        console.log(size);
+    
+        for(let i = 0; i < size;i++){
+            //console.log(max);
         
-        if(e === "iPhone"){
-            //Remove lines of code removeChild method
-            console.log("iPhone viewport")
-            //document.getElementById("link").href = "iPhone.css";
-            window.location.replace("iPhoneIndex.html");
-            
-        }
-        else {
-            //Remove lines of codee
-            console.log("computer or Samsung viewport")
-        }
+            //var cid = document.getElementById(list.item(i).id);
+            //console.log(list.item(i).id);
+            //console.log(cid);
+            //var value = window.getComputedStyle(cid,null).getPropertyValue('z-index');
+            //if(value != 'auto'){
+            //   if(value > max){
+            //      max = value;
+            //   }
+            //}
+        }max = 1;
+            console.log(max);
+            document.getElementById("link").href = "iPhone.css";
+    }
+    function pageLoad(){
+            window.location.href("pictures.html");
     }
     function randomNumber() {
         randomNumber = Math.round(Math.random()*100);
@@ -55,6 +86,18 @@
 		setInterval(function(){ 
 		document.getElementById("showDate").innerHTML = Date()
 		},1000);
+    }
+    function showElements(){
+  
+          if(window.getComputedStyle(document.getElementById("mainbody"),null).getPropertyValue('display') === "inline"){
+
+              document.getElementById("mainbody").style.display = "none";
+          
+          }
+          else{
+              document.getElementById("mainbody").style.display = "inline";
+          
+          }
     }
 	function switchColour(){
 		var edit = document.getElementById("circle");
@@ -73,51 +116,6 @@
         var ret = "X coordinate " + x + " Y coordinate " + y    
         document.getElementById("showLocation").innerHTML = ret;    
      }
-	function getValue(value){	
-		var list = document.querySelectorAll("div");
-		var size = list.length;
-		var array = [];
-		/**for(let i = 0;i < size;i++){
-			var cid = document.getElementById(list.item(i).id);
-		
-			if(window.getComputedStyle(cid,null).getPropertyValue('z-index') === 'auto'){
-				array.push(' ');
-			}
-			else{
-				array[i] = window.getComputedStyle(cid,null).getPropertyValue('z-index');
-			}
-		}**/
-		//console.log(array);
-        //console.log(value);
-        window.getComputedStyle(document.getElementById(value),null).getPropertyValue('z-index');
-        document.getElementById(value).style.zIndex = see;
-        see = see+1;
-		//Set to Two
-		//document.getElementById("kim_kardashian_twitter").style.setProperty("z-index","2")
-		//console.log("Play:  "+window.getComputedStyle(document.getElementById("kim_kardashian_twitter",null)).getPropertyValue('z-index'));
-	}
-    function getAllZIndex(){
-        var list = document.querySelectorAll("div");
-        //console.log(list);
-        size = list.length;
-        console.log(size);
-        
-        for(let i = 0; i < size;i++){
-            //console.log(max);
-            
-            //var cid = document.getElementById(list.item(i).id);
-            //console.log(list.item(i).id);
-            //console.log(cid);
-            //var value = window.getComputedStyle(cid,null).getPropertyValue('z-index');
-            //if(value != 'auto'){
-             //   if(value > max){
-              //      max = value;
-             //   }
-            //}
-        }max = 1;
-        console.log(max);
-        document.getElementById("link").href = "iPhone.css";
-    }
   	function userCustomRandom() {
 	//Return
         var random = document.getElementById("number").value;
@@ -125,4 +123,20 @@
 		document.getElementById("returnValue").innerHTML = print;
         console.log(print);
         document.getElementById("number").value = " ";
+    }
+    function whichViewPort(){
+        var c = window.innerWidth;
+        var d = window.innerHeight;
+        var e = navigator.platform;
+    
+        if(e === "iPhone"){
+            //Remove lines of code removeChild method
+            console.log("iPhone viewport")
+            //document.getElementById("link").href = "iPhone.css";
+            window.location.replace("iPhoneIndex.html");
+        }
+        else {
+            //Remove lines of codee
+            console.log("computer or Samsung viewport")
+        }
     }

@@ -2,7 +2,54 @@
 
 body {
 	
-	background-color: blue;
+	background-color: skyblue;
 	border-right: 25px dotted coral;
     overflow-x: hidden;
+}
+#logo{
+	position:absolute;
+	top:20px;
+	left:20px;
+	width:75px;
+	height:75px;
+}
+#move{
+		position:relative;
+		
+}
+#button{
+	color:red;
+}
+#name{
+		position:relative;
+		top:80px;
+		text-decoration: none;
+}
+#mainbody{
+    	position:relative;
+    	display: none;
+    	list-style-type: none;
+    	text-decoration: none;
+}
+#common_super_twitter {
+      	position:static;
+}
+#margs-twitter{
+      position:relative;
+      top:150px;     
+}
+#kim_kardashian_twitter {
+      position:static;
+}
+#kevin_hart_twitter{
+      position:static;   
+ }
+#lilbaby-wepaid {
+      position:static;
+}
+#chiefkeef-idontlike {
+      position:static; 
+}
+#youtube_vybz_kartel{
+      position:static;
 }
