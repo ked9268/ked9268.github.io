@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>wonder.tv</title>
+<link rel="stylesheet" href="iPhone.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="functions.js"></script>
+</head>
+
+<body>
+	<div id="move">
+    	<img src="black_circle_green_bg.png" id="logo">
+    		<div id="name">
+    			<a id="button" onclick="showElements()" > WONDER</a>
+     			<div id="mainbody">
+     				<li><a class="navbar" id="home" href="iPhoneIndex.html">    home   </a></li>
+     				<li><a class="navbar" id="contact" href="contact.html"> contact </a></li>
+     				<li><a class="navbar">donation</a></li>
+            		<li><a class="navbar" id="games" href="games.html"> games </a></li>
+            		<li><a class="navbar" id="pictures" href="pictures.html">pictures</a></li>
+            		<li><a class="navbar" id="videos" href="videos.html">videos</a></li>
+            		<li><a class="navbar" id="sounds" href="">sounds</a></li>
+            		<li><a class="navbar" id="gifs" href="iPhoneGIF.html">gifs</a></li>
+            		<li><a class="navbar" id="banners" href="banners.html">banners</a></li>
+     			</div>
+     		</div>
+     	</div>
+	 <div id="steve_working_outDIV" onmouseover="getValue('steve_working_outDIV')">
+        <video src="steve_working_out.mp4" id="steve_working_out" class="videos" autoplay loop playsinline onclick="pause()">
+    </div>
+    <div id="maximizeDIV" onmouseover="getValue('maximizeDIV')">
+        <video src="5852-maximize-minimize.mp4" id="maximize" class="videos" autoplay loop playsinline onclick="pause()">
+    </div>
+    <div id="ezDIV" onmouseover="getValue('ezDIV')">
+        <video src="ezgif.com-gif-to-mp4.mp4" id="ez" class="videos" autoplay loop playsinline onclick="pause()">
+    </div>
+   <div id="happy_dogDIV" onmouseover="getValue('happy_dogDIV')">
+        <video src="happy_dog.mp4" id="happy_dog" class="videos" autoplay loop playsinline onclick="pause()">
+    </div>
+</body>
+</html>
