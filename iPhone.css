@@ -46,8 +46,8 @@ body {
       	position:static;
 }
 #margs-twitter{
-      position:relative;
-      top:150px;     
+      position:static;
+      top:20%;     
 }
 #kim_kardashian_twitter {
       position:static;
@@ -59,7 +59,7 @@ body {
       position:static;
 }
 #chiefkeef-idontlike {
-      position:relative; 
+      position:static; 
 }
 #youtube_vybz_kartel{
       position:static;
