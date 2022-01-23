@@ -6,6 +6,11 @@ body {
 	border-right: 25px dotted coral;
     overflow-x: hidden;
 }
+#container{
+		position:relative;
+		top:150px;
+		z-index:1;	
+}	
 /*---------------------------    */
 #logo{
 	position:absolute;
@@ -23,6 +28,7 @@ body {
 
 #move{
 		position:relative;
+		z-index:3;
 		
 }
 #button{
@@ -36,31 +42,33 @@ body {
 #mainbody{
     	position:relative;
     	display: none;
+    	left:50px;
     	list-style-type: none;
     	text-decoration: none;
+    	z-index:3;
 }
 /*------------------------------   */
 #common_super_twitter {
-      	position:static;
+      	
 }
 #margs-twitter{
-      position:static;
+     
          
 }
 #kim_kardashian_twitter {
-      position:static;
+      
 }
 #kevin_hart_twitter{
-      position:static;   
+        
  }
 #lilbaby-wepaid {
-      position:static;
+      
 }
 #chiefkeef-idontlike {
-      position:static; 
+      
 }
 #youtube_vybz_kartel{
-      position:static;
+      
 }
 
 
@@ -73,7 +81,7 @@ body {
     max-width: 300px;
 }
 #steve_working_outDIV{
-	position:relative;
+	position:static;
 	top:150px;
 }
 #happy_dogDIV{	

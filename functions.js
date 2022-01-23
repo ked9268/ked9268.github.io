@@ -88,15 +88,13 @@
 		},1000);
     }
     function showElements(){
-  
+        console.log(document.getElementById("mainbody").style.display);
           if(window.getComputedStyle(document.getElementById("mainbody"),null).getPropertyValue('display') === "inline"){
 
-              document.getElementById("mainbody").style.display = "none";
-          
+              document.getElementById("mainbody").style.display = " none ";
           }
           else{
               document.getElementById("mainbody").style.display = "inline";
-          
           }
     }
 	function switchColour(){
