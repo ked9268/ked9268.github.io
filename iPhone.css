@@ -16,8 +16,6 @@ body {
 }
 .navbar{
 	text-decoration: none;
-}
-.navbar:visited{
 	color:green;
 }
 /*-----------------------------  */
