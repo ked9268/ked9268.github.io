@@ -1,6 +1,6 @@
     see = 3;
     currently = 0;
-
+    pause = 1;
     function changeTextOperation() {
         document.getElementById("randomGeneratorText").remove();
         var input = document.createElement("input");
@@ -97,6 +97,22 @@
               document.getElementById("mainbody").style.display = "inline";
           }
     }
+    function stopStart(value){
+    
+        
+        document.getElementById(value).pause();
+        console.log(document.getElementById(value).paused);
+        if(pause == 1){
+            document.getElementById(value).pause();
+            pause = 0;
+        }
+        else{
+            document.getElementById(value).play();
+            pause = 1;
+        }
+   
+   
+   }
 	function switchColour(){
 		var edit = document.getElementById("circle");
 		var value = window.getComputedStyle( edit ,null).getPropertyValue('background-color'); 
