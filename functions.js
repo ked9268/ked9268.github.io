@@ -26,7 +26,7 @@
          
          
 	        //document.getElementById("body").setAttribute("max-width", c + "px");
-	        document.getElementById("width").innerHTML = "width: " + c + "," + "height: " + d + "  " + e;
+	        //document.getElementById("width").innerHTML = "width: " + c + "," + "height: " + d + "  " + e;
 			showDate();
             whichViewPort();
 	    }
