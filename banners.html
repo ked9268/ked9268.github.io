@@ -39,6 +39,10 @@
 		<input type="file" id="upload" onchange="readFile()">
 		<button onclick="sendRequest() "> Connect</button>
 		<script>
+			var edit;
+			var processing;
+			var placeholder;
+			const values_of_item = [];
 				function getValue(){
 						console.log(document.getElementById("where").value);
 				}
@@ -54,14 +58,45 @@
 						const reader= new FileReader();
 						reader.readAsText(file);
 						reader.onload = function(){
-							var ret = reader.result;
-							console.log(ret)
+							edit = reader.result;
+							var value = removeWhiteSpace(edit);
+							console.log(value);
+							process(value);
+							find(value);
 						}
+						
 				}
-				function process(value){
-				
-				
+				function removeWhiteSpace(value){
+					var processing = value.replace(/\s/g, "");
+					return processing;
 				}
+				function process(value){	
+					//find points of  all "Item,Quantity,Colour,Notes""
+					console.log(value);
+					var length = value.length;
+					//console.log(length);
+					if(value.includes("Item") === true){
+						var c = value.search("Item");
+						values_of_item.push(c);
+						//console.log(processing.substring(c,c+4));
+						//processing.substring(c,length);
+						//console.log(values_of_item);
+						//console.log(value.substring(c,length).length);
+						process(value.substring(c+4,length));
+					}
+					else{
+						console.log(values_of_item);
+						
+					}
+				}
+				function find(value){
+							console.log(value.substring(199,203));
+							var comma = value.search(",");
+							console.log(comma);
+							
+				
+				}	
+				
 		</script>
 </body>
 </html>
