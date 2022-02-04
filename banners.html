@@ -8,7 +8,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<title>banners</title>
 	<style>
-	
+        #form {
+				position:absolute;
+				top:300px;
+				left:300px;
+		
+		}
 	table, th, td {
   		border: 1px solid black;
   		border-collapse: collapse;
@@ -22,81 +27,132 @@
 			<option value="GBag" id="GBagID"> Green Bag</option>
 			<option value="C1Bag" id=C1BagID> ClearBox 1</option>	
 		</select>
-		<button type="button" onclick="getValue()">
-		</button>
-		<table id="table">
-		  <tr>
-		  	<th>Ralph Lauren Bag </th>
-		  	<th>Maroon Bag </th>
-		  	<th>Green Bag </th>
-		  	<th>ClearBox1 </th>
-		  </tr>
-		  <tr>
-		  	
-		  
-		  </tr>
-		</table>
+		<button type="button" onclick="getValue()"></button>
+		<table id="table"></table>
 		<input type="file" id="upload" onchange="readFile()">
-		<button onclick="sendRequest() "> Connect</button>
+		<form id="form">
+			<input type="text" name="item" id="item"><br>
+			<label>Item</label><br>
+			<input type="text" name="quantity" id="quantity"><br>
+			<label>Quantity</label><br>
+			<input type="text" name="colour" id="colour"><br>
+			<label>Colour</label><br>
+			<input type="text" name="notes" id="notes"><br>
+			<label>Notes</label><br>
+			<input type="button" value="Submit" onclick="getFormData()">
+		</form>
 		<script>
 			var edit;
 			var processing;
 			var placeholder;
+			var length;
+			var keys;
+            var returnArray = "";
 			const values_of_item = [];
-				function getValue(){
-						console.log(document.getElementById("where").value);
+			function getContentOfData() {
+				return "";
+			}
+			function produceTable() {
+				formTable();
 				}
-				function sendRequest(){
-                	console.log("Hello World");
-					var xhttp = new XMLHttpRequest();
-					xhttp.open("GET","newfile.php",true);
-					xhttp.send();
-				}
-				function readFile(){
-						const file=document.getElementById('upload').files[0];
-						console.log(file)
-						const reader= new FileReader();
-						reader.readAsText(file);
-						reader.onload = function(){
-							edit = reader.result;
-							var value = removeWhiteSpace(edit);
-							console.log(value);
-							process(value);
-							find(value);
+			function getFormData() {
+				//getContentOfTable();
+				var item = document.getElementById("item").value;
+				document.getElementById("item").value = "";
+				var quantity = document.getElementById("quantity").value;
+				document.getElementById("quantity").value = "";
+				var colour = document.getElementById("colour").value;
+				document.getElementById("colour").value = "";
+				var notes = document.getElementById("notes").value;
+				document.getElementById("notes").value = "";
+				insert(item, quantity, colour, notes);
+				//produceTable();
+			}
+			function header() {
+					var header = '<ol><li><tr>' + '<th>' + "Item" + '</th>' + '<th>' + "Quantity" + '</th>'
+					+ '<th>' + "Colour" + '</th>' + '<th>' + "Notes" + '</th>' + '</tr></ol></li> ';
+					return header;
+
+			}
+			function start() {
+				return '<ol><li>';
+			}
+			function end() {
+				return '</ol></<li> ';
+			}
+			function openNewRow(value) {
+				return '<tr>';
+			}
+			function closeNewRow(value) {
+				return '</tr>'
+			}
+			function newValue(value) {
+				return '<th>' + value + '</th>';
+			}
+			function insert(value, value1, value2, value3) {
+				var add = '<th>' + value + '</th>' + '<th>' + value1 + '</th>'
+					+ '<th>' + value2 + '</th>' + '<th>' + value3 + '</th>' + '</tr></ol></li> ';
+				var returnKey = "";
+				returnKey = returnArray.substring(0, returnArray.length - 11) + add;
+				returnArray = returnKey;
+				var key = document.getElementById("table").innerHTML = returnKey;
+				console.log(key);
+			}
+			function load() {
+			}
+			function formTable() {
+				//Get together all the parts
+				document.getElementById("table").innerHTML = header(); 
+			}
+			function getValue(){
+				console.log(document.getElementById("where").value);
+			}
+			function readFile(){
+				const file=document.getElementById('upload').files[0];
+				console.log(file)
+				const reader= new FileReader();
+				reader.readAsText(file);
+				reader.onload = function(){
+					edit = reader.result;
+					var value = removeWhiteSpace(edit);
+					length = value.length;			
+					setTable(process(value));
+				}		
+			}
+			function removeWhiteSpace(value) {
+				var processing = value.replace(/\s/g, "");
+				return processing;
+			}
+			function process(value) {
+				values_of_items = value.split(",");
+				console.log(values_of_items);
+				if (values_of_items.includes("Item") === true) {
+					for (let i = 0; i < values_of_items.length; i++) {
+						if (values_of_items[i] === "Item") {
+							keys = i;
+							break;
 						}
-						
-				}
-				function removeWhiteSpace(value){
-					var processing = value.replace(/\s/g, "");
-					return processing;
-				}
-				function process(value){	
-					//find points of  all "Item,Quantity,Colour,Notes""
-					console.log(value);
-					var length = value.length;
-					//console.log(length);
-					if(value.includes("Item") === true){
-						var c = value.search("Item");
-						values_of_item.push(c);
-						//console.log(processing.substring(c,c+4));
-						//processing.substring(c,length);
-						//console.log(values_of_item);
-						//console.log(value.substring(c,length).length);
-						process(value.substring(c+4,length));
-					}
-					else{
-						console.log(values_of_item);
-						
 					}
 				}
-				function find(value){
-							console.log(value.substring(199,203));
-							var comma = value.search(",");
-							console.log(comma);
-							
-				
-				}	
-				
+				return values_of_items;
+			}
+			function setTable(value) {
+				var newRow = "";
+                returnArray = returnArray + start()
+				for (let i = keys - 1; i < value.length; i++) {
+					if (value[i] === "") {
+						returnArray = returnArray + openNewRow() + closeNewRow();
+					}
+					else {
+						if (value[i] !== "") {
+							returnArray = returnArray + newValue(value[i]);
+						}
+					}
+				}
+				returnArray = returnArray + end();
+				document.getElementById("table").innerHTML = returnArray;
+				console.log(returnArray);
+			}
 		</script>
 </body>
 </html>
