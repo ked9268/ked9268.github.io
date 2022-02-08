@@ -72,7 +72,6 @@
 					var header = '<ol><li><tr>' + '<th>' + "Item" + '</th>' + '<th>' + "Quantity" + '</th>'
 					+ '<th>' + "Colour" + '</th>' + '<th>' + "Notes" + '</th>' + '</tr></ol></li> ';
 					return header;
-
 			}
 			function start() {
 				return '<ol><li>';
@@ -115,7 +114,8 @@
 				reader.onload = function(){
 					edit = reader.result;
 					var value = removeWhiteSpace(edit);
-					length = value.length;			
+					length = value.length;
+					console.log(value);
 					setTable(process(value));
 				}		
 			}
@@ -124,6 +124,7 @@
 				return processing;
 			}
 			function process(value) {
+				document.getElementById("table").innerHTML = "";
 				values_of_items = value.split(",");
 				console.log(values_of_items);
 				if (values_of_items.includes("Item") === true) {
@@ -138,14 +139,19 @@
 			}
 			function setTable(value) {
 				var newRow = "";
+				returnArray = "";
                 returnArray = returnArray + start()
 				for (let i = keys - 1; i < value.length; i++) {
+					
 					if (value[i] === "") {
 						returnArray = returnArray + openNewRow() + closeNewRow();
 					}
 					else {
 						if (value[i] !== "") {
 							returnArray = returnArray + newValue(value[i]);
+							if (value[i + 1] === "") {
+								returnArray = returnArray + '<th><button>+</button></th><br>';
+							}
 						}
 					}
 				}
