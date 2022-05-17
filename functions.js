@@ -28,7 +28,7 @@
 	        //document.getElementById("body").setAttribute("max-width", c + "px");
 	        //document.getElementById("width").innerHTML = "width: " + c + "," + "height: " + d + "  " + e;
 			showDate();
-            whichViewPort();
+            //whichViewPort();
 	    }
     function getValue(value){
             var list = document.querySelectorAll("div");
@@ -145,12 +145,15 @@
             if(e === "iPhone"){
                 //Remove lines of code removeChild method
                 console.log("iPhone viewport")
+                window.alert("iPhone viewport");
                 //document.getElementById("link").href = "iPhone.css";
-                window.location.replace("iPhoneIndex.html");
+               // window.location.replace("iPhoneIndex.html");
             }
             else {
                 //Remove lines of codee
                 console.log("computer or Samsung viewport")
+                //window.alert("computer or Samsung viewport")
+                window.location.replace("Computerindex.html");
             }
        
         
