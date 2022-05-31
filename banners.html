@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<script src="functions.js"></script>
-	<link rel="stylesheet" href="base.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<title>banners</title>
-	<style>
-        #form {
-				position:absolute;
-				top:300px;
-				left:300px;
+	<head>
+		<script src="functions.js"></script>
+		<link rel="stylesheet" href="base.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<title>banners</title>
+		<style>
+			#form {
+					position:absolute;
+					top:300px;
+					left:300px;
 		
-		}
-	table, th, td {
-  		border: 1px solid black;
-  		border-collapse: collapse;
-		}
-	</style>
-</head>
-<body>
+			}
+			table, th, td {
+  					border: 1px solid black;
+  					border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body>
 		<!-- <select id="where">
-			<option value="RLBag" id="RLBagID"> Ralph Lauren Bag</option>
-			<option value="MBag" id="MBagID"> Maroon Bag</option>
-			<option value="GBag" id="GBagID"> Green Bag</option>
-			<option value="C1Bag" id=C1BagID> ClearBox 1</option>	
-		</select>
-			
-		
-		<button type="button" onclick="getValue()">Get Value</button>
-		-->
+		<option value="RLBag" id="RLBagID"> Ralph Lauren Bag</option>
+		<option value="MBag" id="MBagID"> Maroon Bag</option>
+		<option value="GBag" id="GBagID"> Green Bag</option>
+		<option value="C1Bag" id=C1BagID> ClearBox 1</option>
+	</select>
+
+
+	<button type="button" onclick="getValue()">Get Value</button>
+	-->
 		<table id="table"></table>
 		<input type="file" id="upload" onchange="readFile()">
 		<!-- <form id="form">
-			<input type="text" name="item" id="item"><br>
-			<label>Item</label><br>
-			<input type="text" name="quantity" id="quantity"><br>
-			<label>Quantity</label><br>
-			<input type="text" name="colour" id="colour"><br>
-			<label>Colour</label><br>
-			<input type="text" name="notes" id="notes"><br>
-			<label>Notes</label><br>
-			<input type="button" value="Submit" onclick="getFormData()">
-		</form>
-			-->
+		<input type="text" name="item" id="item"><br>
+		<label>Item</label><br>
+		<input type="text" name="quantity" id="quantity"><br>
+		<label>Quantity</label><br>
+		<input type="text" name="colour" id="colour"><br>
+		<label>Colour</label><br>
+		<input type="text" name="notes" id="notes"><br>
+		<label>Notes</label><br>
+		<input type="button" value="Submit" onclick="getFormData()">
+	</form>
+		-->
 		<script>
 			var edit;
 			var processing;
 			var placeholder;
 			var length;
 			var keys;
-            var returnArray = "";
+			var returnArray = "";
 			const values_of_item = [];
 			function getContentOfData() {
 				return "";
 			}
 			function produceTable() {
 				formTable();
-				}
+			}
 			function getFormData() {
 				//getContentOfTable();
 				var item = document.getElementById("item").value;
@@ -73,9 +73,9 @@
 				//produceTable();
 			}
 			function header() {
-					var header = '<ol><li><tr>' + '<th>' + "Item" + '</th>' + '<th>' + "Quantity" + '</th>'
+				var header = '<ol><li><tr>' + '<th>' + "Item" + '</th>' + '<th>' + "Quantity" + '</th>'
 					+ '<th>' + "Colour" + '</th>' + '<th>' + "Notes" + '</th>' + '</tr></ol></li> ';
-					return header;
+				return header;
 			}
 			function start() {
 				return '<ol><li>';
@@ -105,23 +105,23 @@
 			}
 			function formTable() {
 				//Get together all the parts
-				document.getElementById("table").innerHTML = header(); 
+				document.getElementById("table").innerHTML = header();
 			}
-			function getValue(){
+			function getValue() {
 				console.log(document.getElementById("where").value);
 			}
-			function readFile(){
-				const file=document.getElementById('upload').files[0];
+			function readFile() {
+				const file = document.getElementById('upload').files[0];
 				console.log(file)
-				const reader= new FileReader();
+				const reader = new FileReader();
 				reader.readAsText(file);
-				reader.onload = function(){
+				reader.onload = function () {
 					edit = reader.result;
 					var value = removeWhiteSpace(edit);
 					length = value.length;
 					console.log(value);
 					setTable(process(value));
-				}		
+				}
 			}
 			function removeWhiteSpace(value) {
 				var processing = value.replace(/\s/g, "");
@@ -146,16 +146,16 @@
 			function setTable(value) {
 				var newRow = "";
 				returnArray = "";
-                returnArray = returnArray + start()
-				for (let i = keys; i < value.length; i++) {	
+				returnArray = returnArray + start()
+				for (let i = keys; i < value.length; i++) {
 					if (i % 7 === 0) {
-                        returnArray = returnArray + newValue(value[i]) + '<th><button>+</button></th><br>' + openNewRow() + closeNewRow();
+						returnArray = returnArray + newValue(value[i]) + '<th><button>+</button></th><br>' + openNewRow() + closeNewRow();
 					}
 					else {
-						if (i % 7 !== 0 ) {
+						if (i % 7 !== 0) {
 							returnArray = returnArray + newValue(value[i]);
 							//if ( i % 7 === 6) {
-								//returnArray = returnArray + '<th><button>+</button></th><br>';
+							//returnArray = returnArray + '<th><button>+</button></th><br>';
 							//}
 						}
 					}
@@ -165,5 +165,22 @@
 				console.log(returnArray);
 			}
 		</script>
-</body>
+		<div id="move">
+			<img src="black_circle_green_bg.png" id="logo">
+			<div id="dropdown">
+				<a id="wonder">wonder.tv</a>
+				<div class="content">
+					<li class="navbar"><a href="Computerindex.html" ontouchend="index.html">home</a></li>
+					<li class="navbar"><a href="contact.html" ontouchend="contact.html">contact</a></li>
+					<li class="navbar"><a>donation</a></li>
+					<li class="navbar"><a href="games.html">games</a></li>
+					<li class="navbar"><a href="pictures.html">pictures</a></li>
+					<li class="navbar"><a href="videos.html">videos</a></li>
+					<li class="navbar"><a>sounds</a></li>
+					<li class="navbar"><a href="gifs.html">gifs</a></li>
+					<li class="navbar"><a href="banners.html">banners</a></li>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
