@@ -146,17 +146,10 @@
         console.log(e);
         if (e !== "iPhone") {
                  window.location.replace("Computerindex.html");
-                //Remove lines of code removeChild method
-                //console.log("iPhone viewport")
-                //window.alert("iPhone viewport");
-                //document.getElementById("link").href = "iPhone.css";
-               // window.location.replace("iPhoneIndex.html");
+              
             }
             else {
-                //Remove lines of codee
-                //console.log("computer or Samsung viewport")
-                //window.alert("computer or Samsung viewport")
-                
+              
             }
        
         
