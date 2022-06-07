@@ -142,7 +142,7 @@
         var c = window.innerWidth;
         var d = window.innerHeight;
         var e = navigator.platform;
-        console.log(e);
+        console.log("HelloWorld!");
             if(e === "iPhone"){
                 //Remove lines of code removeChild method
                 //console.log("iPhone viewport")
