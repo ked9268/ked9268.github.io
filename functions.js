@@ -142,15 +142,12 @@
         var c = window.innerWidth;
         var d = window.innerHeight;
         var e = navigator.platform;
-        console.log("HelloWorld!");
-        console.log(e);
+            console.log("HelloWorld!");
+            console.log(e);
         if //(e !== "iPhone") {
                  //window.location.replace("Computerindex.html");
               
             //}
-            else //{
-              
-           //}
-       
-        
+            
+             
     }
