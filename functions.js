@@ -139,9 +139,9 @@
         document.getElementById("number").value = " ";
     }
 function whichViewPort() {
-    var c = window.innerWidth;
-    var d = window.innerHeight;
-    var e = navigator.platform;
+        var c = window.innerWidth;
+        var d = window.innerHeight;
+        var e = navigator.platform;
         console.log("HelloWorld!");
         console.log(e);
 
