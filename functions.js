@@ -138,11 +138,19 @@
         console.log(print);
         document.getElementById("number").value = " ";
     }
-function whichViewPort() {
+    function whichViewPort() {
         var c = window.innerWidth;
         var d = window.innerHeight;
         var e = navigator.platform;
         console.log("HelloWorld!");
-    console.log(e);
+        console.log(e);
 
+
+        if (e.indexOf("Mac") === 0 || e.indexOf("Win") === 0) {
+            window.location.replace("Computerindex.html");
+
+        }
+        else {
+
+        }
     }
