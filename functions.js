@@ -142,11 +142,12 @@
         var c = window.innerWidth;
         var d = window.innerHeight;
         var e = navigator.platform;
+        let E = e;
         console.log("HelloWorld!");
         console.log(e);
 
 
-        if (e.indexOf("Mac") === 0 || e.indexOf("Win") === 0) {
+        if (E.indexOf("Mac") === 0 || E.indexOf("Win") === 0) {
             window.location.replace("Computerindex.html");
 
         }
