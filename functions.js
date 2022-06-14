@@ -145,8 +145,9 @@
         console.log("HelloWorld!");
         console.log(e);
         if (e !== "iPhone") {
-                 window.location.replace("Computerindex.html");
-              
+            window.location.replace("Computerindex.html");
+            console.log(e);
+                 
             }
             else {
               
