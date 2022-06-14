@@ -143,13 +143,6 @@ function whichViewPort() {
         var d = window.innerHeight;
         var e = navigator.platform;
         console.log("HelloWorld!");
-        console.log(e);
-        if (e !== "iPhone") {
-            window.location.replace("Computerindex.html");
-            console.log(e);
-                 
-            }
-            else {
-              
-            }
+    console.log(e);
+
     }
