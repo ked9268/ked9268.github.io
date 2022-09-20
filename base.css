@@ -9,7 +9,7 @@ a:visited {
     text-decoration: none;
 }
 body {
-    background-color: violet;
+    background-color: lightgreen;
     border-right: 25px dotted coral;
     overflow-x: hidden;
 }
