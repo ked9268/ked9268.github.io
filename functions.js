@@ -1,6 +1,8 @@
     see = 3;
     currently = 0;
     pause = 1;
+    screen_width;
+    screen_height;
     function changeTextOperation() {
         document.getElementById("randomGeneratorText").remove();
         var input = document.createElement("input");
@@ -140,12 +142,13 @@
     }
     function whichViewPort() {
         var c = window.innerWidth;
+        screen_width = window.innerWidth;
         var d = window.innerHeight;
+        screen_height = window.innerHeight;
+        console.log(screen_width);
+        console.log(screen_height);
         var e = navigator.platform;
         let E = e;
-        console.log("HelloWorld!");
-        console.log(e);
-
 
         if (E.indexOf("Mac") === 0 || E.indexOf("Win") === 0) {
             window.location.replace("Computerindex.html");
