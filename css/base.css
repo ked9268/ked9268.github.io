@@ -69,48 +69,17 @@ img {
     max-height: 300px;
     max-width: 300px;
 }
-#square{
-	position: absolute;
-    top: 80%;
-    left: 50%; 
-	height: 50px;
-  	width: 50px;
- 	background-color: #555;
- 	background-color: rgb(255,0,0);
- 	opacity:0.5;
-}
 #dropdown {
     position: relative;
     top:-75px;
     left:-50px;
     z-index: 1;
 }
-#earthjpeg {
-    position:absolute;
-    top :65%;
-    left :3%;
-}
 #info {
        position: absolute;
        left: 75%;
        top : 80%;
        }
-#oceanjpg {
-    position: absolute;
-    top: 10%;
-    left: 23%;
-    z-index: -1;
-} 
-#randomGeneratorText {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-}
-#returnValue {
-    position: absolute;
-    top: 35%;
-    left: 65%;
-}
 #logo{
 	position:absolute;
 	top:-150px;

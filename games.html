@@ -22,13 +22,11 @@
     		position: absolute;
     		top: 25%;
     		left: 25;
-    		
     	}
     	#wondertv_phone{
     		position: absolute;
     		top: 75%;
-    		left: 15%;	
-    	
+    		left: 15%;
     	}
     	#contact_phone{
     		position: absolute;
@@ -36,6 +34,16 @@
     		left: 15%;
     		display:none;
     	}
+        #square{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            height: 50px;
+            width: 50px;
+            background-color: #555;
+            background-color: rgb(255,0,0);
+            opacity:0.5;
+        }
     </style>
     <script>
 		function getColor(){
@@ -81,7 +89,7 @@
 <body onclick="trackMouse(event)">
  <div id=circle draggable=true ondragstart="" ondragend="drop(event)">
     </div>
-<div id=square>
+<div id="square">
     </div>    
 <a id="wondertv_phone" onclick="showMenu()" >WONDER.TV </a>
 <a id="contact_phone" >CONTACT </a>
