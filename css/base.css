@@ -188,45 +188,6 @@ img {
     width: 10%;
     font-size: 150%;
 }
-#common_super_twitter {
-      position: absolute;
-      top: 15%;
-      left: 15%;
-      z-index: 2;
-}
-#margs-twitter{
-        
-       position: absolute;
-       top: 15%;
-       left: 65%;
-       
-}
-#kim_kardashian_twitter {
-       position: absolute;
-       top: 25%;
-       left: 25%;
-       z-index: 1;
-}
-#kevin_hart_twitter{
-      position: absolute;
-      top: 40%;
-      left: 40%;      
- }
-#lilbaby-wepaid {
-       position: absolute;
-       top: 75%;
-       left: 15%;
-        }
-#chiefkeef-idontlike {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-}
-#youtube_vybz_kartel{
-        position: absolute; 
-        top:30%;
-        left: 80%;
-}
 #getZIndex{
         position:absolute;
         top:30px;
