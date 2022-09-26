@@ -22,12 +22,32 @@
     	#mainbody{
     			display: none;
     	}
+        #connectwithsc{
+            position:absolute;
+            top :22%;
+            left:22%;
+        }
+        #spotifyLogo{
+            position:absolute;
+            top :22%;
+            left:42%;
+        }
+        #circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 50px;
+            width: 50px;
+            background-color: #555;
+            border-radius: 50%;
+            background-color: rgb(255,0,0);
+        }
     </style>
    
 </head>
 <body>
     <p onmousedown="changeTextOperation()" id="randomGeneratorText">Random Number Generator</p>
-    <div id=circle onclick = "switchColour()">   
+    <div id="circle" onclick = "switchColour()">
     </div>
     <div id="connectwithsc" >
     	<a href="http://www.soundcloud.com/bcwonder" target="_blank">

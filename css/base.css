@@ -68,21 +68,6 @@ img {
     border-width: 5px;
     max-height: 300px;
     max-width: 300px;
-} 
-#circle {
-	position: absolute;
-    top: 50%;
-    left: 50%; 
-	height: 50px;
-  	width: 50px;
- 	background-color: #555;
- 	border-radius: 50%;
- 	background-color: rgb(255,0,0);
-}
-#connectwithsc{
-	position:absolute;
-	top :22%;
-	left:22%;
 }
 #square{
 	position: absolute;
@@ -105,10 +90,6 @@ img {
     top :65%;
     left :3%;
 }
-#happy_dogDIV{
-	position:absolute;
-	left:600px;
-}
 #info {
        position: absolute;
        left: 75%;
@@ -130,11 +111,6 @@ img {
     top: 35%;
     left: 65%;
 }
-#ezDIV {
-	position:absolute;
-	top:500px;
-	left:500px;
-}
 #logo{
 	position:absolute;
 	top:-150px;
@@ -142,45 +118,10 @@ img {
 	width:75px;
 	height:75px;
 }
-#spotifyLogo{
-	position:absolute;
-	top :22%;
-	left:42%;
-}
-#steve_working_outDIV{
-	position:absolute;
-	left:750px;
-	top: 300px;
-}
-#triangleUp {
-	position:absolute;
-	width: 0;
-	height: 0;
-	top:25%;
-	left:25%;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid #555;
-}
-#triangleDown{
-	position:absolute;
-	width: 0;
-	height: 0;
-	top:27%;
-	left:25%;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #555;
-}
 #move{
-		position:absolute;
-		top:150px;
-		left:70px;
-}
-#maximizeDIV{
-	position: absolute;
-	left: 250px;
-	top: 250px;
+    position:absolute;
+    top:150px;
+    left:70px;
 }
 #wonder {
     position: relative;
