@@ -48,28 +48,6 @@ body {
     	z-index:3;
 }
 /*------------------------------   */
-#common_super_twitter {
-      	
-}
-#margs-twitter{
-     
-         
-}
-#kim_kardashian_twitter {
-      
-}
-#kevin_hart_twitter{
-        
- }
-#lilbaby-wepaid {
-      
-}
-#chiefkeef-idontlike {
-      
-}
-#youtube_vybz_kartel{
-      
-}
 
 
 /*------------------------------   */
@@ -80,31 +58,9 @@ body {
     max-height: 300px;
     max-width: 300px;
 }
-#steve_working_outDIV{
-	position:static;
-	top:150px;
-}
-#happy_dogDIV{	
-	position:static;
-}
-#maximizeDIV{
-	position:static;	
-}
-#ezDIV{
-	position:static;	
-	
-}
 
 /*------------------------------   */
 .pictures {
 		height:100%;
 		width:100%	
-}
-#earthjpeg {
-	
-	
-}
-#oceanjpg{  
-	
-	
 }
