@@ -15,7 +15,9 @@
 		
 			}
             table, th, td {
-                position: relative;
+                
+				top:200px;
+				position: relative;
                 border: 1px solid black;
                 border-collapse: collapse;
             }
@@ -60,17 +62,18 @@
 		-->
 		<table id="table"></table>
 		<input type="file" id="upload" onchange="readFile()">
-		<!-- <form id="form">
-		<input type="text" name="item" id="item"><br>
-		<label>Item</label><br>
-		<input type="text" name="quantity" id="quantity"><br>
-		<label>Quantity</label><br>
-		<input type="text" name="colour" id="colour"><br>
-		<label>Colour</label><br>
-		<input type="text" name="notes" id="notes"><br>
-		<label>Notes</label><br>
-		<input type="button" value="Submit" onclick="getFormData()">
-	</form>
+		<!--	
+			<form id="form">
+				<input type="text" name="item" id="item"><br>
+				<label>Item</label><br>
+				<input type="text" name="quantity" id="quantity"><br>
+				<label>Quantity</label><br>
+				<input type="text" name="colour" id="colour"><br>
+				<label>Colour</label><br>
+				<input type="text" name="notes" id="notes"><br>
+				<label>Notes</label><br>
+				<input type="button" value="Submit" onclick="getFormData()">
+			</form>
 		-->
 		<script>
 			var edit;
