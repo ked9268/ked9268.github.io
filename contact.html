@@ -4,7 +4,7 @@
     <title>
         contact page
     </title>
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="css/base.css">
     <script src="functions.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -22,27 +22,77 @@
     	#mainbody{
     			display: none;
     	}
+        #connectwithsc{
+            position:absolute;
+            top :22%;
+            left:22%;
+        }
+        #spotifyLogo{
+            position:absolute;
+            top :22%;
+            left:42%;
+        }
+        #instagramLogo{
+            position:absolute;
+            top :56%;
+            left:23%;
+        }
+        #twitterLogo{
+            position:absolute;
+            top :56%;
+            left:42%;
+        }
+        #circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 50px;
+            width: 50px;
+            background-color: #555;
+            border-radius: 50%;
+            background-color: rgb(255,0,0);
+        }
+        #randomGeneratorText {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+        }
+        #returnValue {
+            position: absolute;
+            top: 35%;
+            left: 65%;
+        }
     </style>
    
 </head>
 <body>
     <p onmousedown="changeTextOperation()" id="randomGeneratorText">Random Number Generator</p>
-    <div id=circle onclick = "switchColour()">   
+    <div id="circle" onclick = "switchColour()">
     </div>
     <div id="connectwithsc" >
     	<a href="http://www.soundcloud.com/bcwonder" target="_blank">
-           <img src="connect_with_soundcloud.png" id="connectwithscIMG">
+           <img src="images/connect_with_soundcloud.png" id="connectwithscIMG">
      	</a>
      </div>
       <div id="spotifyLogo" >
     	<a href="https://open.spotify.com/user/bufvy7qbvfhdtruy520mhlrbg?si=bc5a6c608e3b4ba4" target="_blank">
-           <img src="spotify_logo.png" id="spotifyLogoIMG">
+           <img src="images/spotify_logo.png" id="spotifyLogoIMG">
      	</a>
      </div>
+      <div id="instagramLogo">
+           <a href="https://www.instagram.com/kcswonder/" target="_blank">
+               <img src="images/instagram_logo.jpg" id="instagramLogoIMG" class="videos">
+           </a>
+      </div>
+      <div id="twitterLogo">
+           <a href="https://mobile.twitter.com/common_super" target="_blank">
+                 <img src="images/twitter_logo.png" id="twitterLogoIMG" class="videos">
+           </a>
+      </div>
     <p id="returnValue"></p>
     
     <div id="move">
-    	<img src="black_circle_green_bg.png" id="logo">
+    	<img src="images/blue_circle.png" id="logo">
      	 <div id="dropdown">
       	  <a id="wonder">wonder.tv</a>
        		 <div class="content">

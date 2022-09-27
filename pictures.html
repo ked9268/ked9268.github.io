@@ -4,14 +4,26 @@
     <title>
         Pictures page
     </title>
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="css/base.css">
     <script src="functions.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-    
-    #circle {
-    		cursor: move;
-    		}  
+    #earthjpeg {
+        position:absolute;
+        top :65%;
+        left :3%;
+    }
+    #oceanjpg {
+        position: absolute;
+        top: 10%;
+        left: 23%;
+        z-index: -1;
+    }
+    #thirdpng{
+        position: absolute;
+        top: 40%;
+        left: 63%;
+    }
     </style>
 </head>
 <body onresize="checkSize()" onload="checkSize()">
@@ -20,16 +32,17 @@
     	<p id="showDate">Hello World!</p>
     	<p id="width"></p>
     </div>
-   
      	<div id="oceanjpg" class="videos">
-            <img src="ocean.jpg">
+            <img src="images/ocean.jpg">
         </div>
         <div id="earthjpeg" class="videos">
-            <img src="earth.jpeg" id="earth.jpeg">
+            <img src="images/earth.jpeg" id="earth.jpeg">
         </div>
-   
+        <div id="thirdpng" class="videos">
+            <img src="images/648801A9-F71F-46A5-982D-0A08DC1116.png" id="img001">
+        </div>
     <div id="move">
-    	<img src="black_circle_green_bg.png" id="logo">
+    	<img src="images/blue_circle.png" id="logo">
      	 <div id="dropdown">
       	  <a id="wonder">wonder.tv</a>
        		 <div class="content">

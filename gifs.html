@@ -5,7 +5,7 @@
         <title>
             GIF PAGE
         </title>
-        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="css/base.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
         /*
@@ -23,6 +23,45 @@
         		animation-delay: 2s;
         		animation-iteration-count: infinite;
         }*/
+            #happy_dogDIV{
+                position:absolute;
+                left:600px;
+            }
+            #steve_working_outDIV{
+                position:absolute;
+                left:750px;
+                top: 300px;
+            }
+            #ezDIV {
+                position:absolute;
+                top:500px;
+                left:500px;
+            }
+            #maximizeDIV{
+                position: absolute;
+                left: 250px;
+                top: 250px;
+            }
+            #triangleUp {
+                position:absolute;
+                width: 0;
+                height: 0;
+                top:25%;
+                left:25%;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                border-bottom: 50px solid #555;
+            }
+            #triangleDown{
+                position:absolute;
+                width: 0;
+                height: 0;
+                top:27%;
+                left:25%;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                border-top: 50px solid #555;
+            }
         </style>      
     </head>
     <body> 
@@ -30,20 +69,20 @@
     <div id=triangleUp> </div>
     <div id=triangleDown ></div>
     <div id="steve_working_outDIV" onmouseover="getValue('steve_working_outDIV')">
-        <video src="steve_working_out.mp4" id="steve_working_out" class="videos" autoplay loop playsinline onclick="pause()">
+        <video src="gifs/steve_working_out.mp4" id="steve_working_out" class="videos" autoplay loop playsinline onclick="pause()">
     </div>
     <div id="happy_dogDIV" onmouseover="getValue('happy_dogDIV')">
-        <video src="happy_dog.mp4" id="happy_dog" class="videos" autoplay loop playsinline onclick="pause()">
+        <video src="gifs/happy_dog.mp4" id="happy_dog" class="videos" autoplay loop playsinline onclick="pause()">
     </div>
     <div id="maximizeDIV" onmouseover="getValue('maximizeDIV')">
-        <video src="5852-maximize-minimize.mp4" id="maximize" class="videos" autoplay loop playsinline onclick="pause()">
+        <video src="gifs/5852-maximize-minimize.mp4" id="maximize" class="videos" autoplay loop playsinline onclick="pause()">
     </div>
     <div id="ezDIV" onmouseover="getValue('ezDIV')">
-        <video src="ezgif.com-gif-to-mp4.mp4" id="ez" class="videos" autoplay loop playsinline onclick="pause()">
+        <video src="gifs/ezgif.com-gif-to-mp4.mp4" id="ez" class="videos" autoplay loop playsinline onclick="pause()">
     </div>
    
     <div id="move">
-    	<img src="black_circle_green_bg.png" id="logo">
+    	<img src="images/blue_circle.png" id="logo">
      	 <div id="dropdown">
       	  <a id="wonder">wonder.tv</a>
        		 <div class="content">
