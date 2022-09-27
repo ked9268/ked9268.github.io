@@ -1,233 +1,243 @@
-a:link {
-    position: relative;
-    color: darkblue; 
-    text-decoration: none;
+    a:link {
+        position: relative;
+        color: darkblue; 
+        text-decoration: none;
+}   
+    a:visited {
+        position: relative;
+        color: transparent;
+        text-decoration: none;
 }
-a:visited {
-    position: relative;
-    color: transparent;
-    text-decoration: none;
+    body {
+        background-color: violet;
+        border-right: 25px dotted coral;
+        overflow-x: hidden;
 }
-body {
-    background-color: violet;
-    border-right: 25px dotted coral;
-    overflow-x: hidden;
-}
-#wonder:hover {
-    position: relative;
-    width:200px;
-    background-color: green;
-    z-index: 1;
-}
-.content {
-    position: relative;
-    width:200px;
-    display: none;
-    z-index: 1;
+    .content {
+        position: relative;
+        width: 200px;
+        display: none;
+        z-index: 1;
+    }
+    input {
+        position: relative;
+        top: 50px;
+        left: 150px;
+    }
+    h1 {
+        position: absolute;
+        top: 200px;
+        left: 500px;
+    }
+    img {
+        max-height: 300px;
+        max-width: 300px;
+    }
+    .videos {
+        border-style: solid;
+        border-width: 5px;
+        max-height: 300px;
+        max-width: 300px;
+    }
+    /*-----------------------------------*/
+    #wonder:hover {
+        position: relative;
+        width:200px;
+        background-color: green;
+        z-index: 1;
 }
 
-#dropdown:hover .content {
-    position: relative;
-    width:200px;
-    display: block;
-    z-index: 1;
-}
-input {
-    position: relative;
-    top: 50px;
-    left: 150px;
-}
-li {
-    list-style-type: none;
-}
-.navbar {
-    position: relative;
-    display: block;
-    width: 100%;
-    font-size: 150%;
-    color: black;
-    z-index: 1;
-}
-.navbar:hover {
-    position: relative;
-    background-color: green;
-    text-decoration: none;
-    z-index:1;
+    #dropdown:hover .content {
+        position: relative;
+        width:200px;
+        display: block;
+        z-index: 1;
     }
-h1 {
-    position: absolute;
-    top: 200px;
-    left: 500px;
+    li {
+        list-style-type: none;
 }
-img {   
-    max-height:300px;
-    max-width:300px;
+    .navbar {
+        position: relative;
+        display: block;
+        width: 100%;
+        font-size: 150%;
+        color: black;
+        z-index: 1;
 }
-.videos {
-    border-style: solid;
-    border-width: 5px;
-    max-height: 300px;
-    max-width: 300px;
+    .navbar:hover {
+        position: relative;
+        background-color: green;
+        text-decoration: none;
+        z-index:1;
+}
+    #dropdown {
+        position: relative;
+        top: -75px;
+        left: -50px;
+        z-index: 1;
+}
+    #logo {
+        position: absolute;
+        top: -150px;
+        left: -50px;
+        width: 75px;
+        height: 75px;
+    }
+
+    #move {
+        position: absolute;
+        top: 150px;
+        left: 70px;
+    }
+
+    #wonder {
+        position: relative;
+        display: block;
+        width: 10%;
+        font-size: 150%;
+    }
+    /*------------------------------*/
+    #circle {
+	    position: absolute;
+        top: 50%;
+        left: 50%; 
+	    height: 50px;
+  	    width: 50px;
+ 	    background-color: #555;
+ 	    border-radius: 50%;
+ 	    background-color: rgb(255,0,0);
+}
+    #square{
+	    position: absolute;
+        top: 80%;
+        left: 50%; 
+	    height: 50px;
+  	    width: 50px;
+ 	    background-color: #555;
+ 	    background-color: rgb(255,0,0);
+ 	    opacity:0.5;
+}}
+    /*-----------------------------------------*/
+    #earthjpeg {
+        position:absolute;
+        top :65%;
+        left :3%;
+}
+    #oceanjpg {
+        position: absolute;
+        top: 10%;
+        left: 23%;
+        z-index: -1;
 } 
-#circle {
-	position: absolute;
-    top: 50%;
-    left: 50%; 
-	height: 50px;
-  	width: 50px;
- 	background-color: #555;
- 	border-radius: 50%;
- 	background-color: rgb(255,0,0);
+    /*---------------------------*/
+    #randomGeneratorText {
+        position: absolute;
+        top: 35%;
+        left: 50%;
 }
-#connectwithsc{
-	position:absolute;
-	top :22%;
-	left:22%;
+    #returnValue {
+        position: absolute;
+        top: 35%;
+        left: 65%;
 }
-#square{
-	position: absolute;
-    top: 80%;
-    left: 50%; 
-	height: 50px;
-  	width: 50px;
- 	background-color: #555;
- 	background-color: rgb(255,0,0);
- 	opacity:0.5;
+    #spotifyLogo{
+	    position:absolute;
+	    top :22%;
+	    left:42%;
 }
-#dropdown {
-    position: relative;
-    top:-75px;
-    left:-50px;
-    z-index: 1;
+    #connectwithsc {
+        position: absolute;
+        top: 22%;
+        left: 22%;
+    }
+/*-----------------------------  */
+    #ezDIV {
+        position: absolute;
+        top: 500px;
+        left: 500px;
+    }
+    #steve_working_outDIV{
+	    position:absolute;
+	    left:750px;
+	    top: 300px;
 }
-#earthjpeg {
-    position:absolute;
-    top :65%;
-    left :3%;
+    #happy_dogDIV {
+        position: absolute;
+        left: 600px;
 }
-#happy_dogDIV{
-	position:absolute;
-	left:600px;
+    #triangleUp {
+	    position:absolute;
+	    width: 0;
+	    height: 0;
+	    top:25%;
+	    left:25%;
+	    border-left: 25px solid transparent;
+	    border-right: 25px solid transparent;
+	    border-bottom: 50px solid #555;
 }
-#info {
-       position: absolute;
-       left: 75%;
-       top : 80%;
-       }
-#oceanjpg {
-    position: absolute;
-    top: 10%;
-    left: 23%;
-    z-index: -1;
-} 
-#randomGeneratorText {
-    position: absolute;
-    top: 35%;
-    left: 50%;
+    #triangleDown{
+	    position:absolute;
+	    width: 0;
+	    height: 0;
+	    top:27%;
+	    left:25%;
+	    border-left: 25px solid transparent;
+	    border-right: 25px solid transparent;
+	    border-top: 50px solid #555;
 }
-#returnValue {
-    position: absolute;
-    top: 35%;
-    left: 65%;
+    #maximizeDIV{
+	    position: absolute;
+	    left: 250px;
+	    top: 250px;
 }
-#ezDIV {
-	position:absolute;
-	top:500px;
-	left:500px;
-}
-#logo{
-	position:absolute;
-	top:-150px;
-	left:-50px;
-	width:75px;
-	height:75px;
-}
-#spotifyLogo{
-	position:absolute;
-	top :22%;
-	left:42%;
-}
-#steve_working_outDIV{
-	position:absolute;
-	left:750px;
-	top: 300px;
-}
-#triangleUp {
-	position:absolute;
-	width: 0;
-	height: 0;
-	top:25%;
-	left:25%;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid #555;
-}
-#triangleDown{
-	position:absolute;
-	width: 0;
-	height: 0;
-	top:27%;
-	left:25%;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #555;
-}
-#move{
-		position:absolute;
-		top:150px;
-		left:70px;
-}
-#maximizeDIV{
-	position: absolute;
-	left: 250px;
-	top: 250px;
-}
-#wonder {
-    position: relative;
-    display: block;
-    width: 10%;
-    font-size: 150%;
-}
-#common_super_twitter {
+/*-----------------------------------------------*/
+
+/*------------------------------------------------------  */
+    #common_super_twitter {
       position: absolute;
       top: 15%;
       left: 15%;
       z-index: 2;
 }
-#margs-twitter{
+    #info {
+        position: absolute;
+        left: 75%;
+        top: 80%;
+    }
+    #margs-twitter{
         
        position: absolute;
        top: 15%;
        left: 65%;
        
 }
-#kim_kardashian_twitter {
+    #kim_kardashian_twitter {
        position: absolute;
        top: 25%;
        left: 25%;
        z-index: 1;
 }
-#kevin_hart_twitter{
+    #kevin_hart_twitter{
       position: absolute;
       top: 40%;
       left: 40%;      
  }
-#lilbaby-wepaid {
+    #lilbaby-wepaid {
        position: absolute;
        top: 75%;
        left: 15%;
         }
-#chiefkeef-idontlike {
+    #chiefkeef-idontlike {
         position: absolute;
         top: 20%;
         left: 50%;
 }
-#youtube_vybz_kartel{
+    #youtube_vybz_kartel{
         position: absolute; 
         top:30%;
         left: 80%;
 }
-#getZIndex{
+    #getZIndex{
         position:absolute;
         top:30px;
         left: 400px;

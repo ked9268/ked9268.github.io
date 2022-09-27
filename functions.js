@@ -24,7 +24,6 @@
 	        var d = window.innerHeight;
 	        var e = navigator.platform;
          
-         
 	        //document.getElementById("body").setAttribute("max-width", c + "px");
 	        //document.getElementById("width").innerHTML = "width: " + c + "," + "height: " + d + "  " + e;
 			showDate();
@@ -79,10 +78,18 @@
             window.location.href("pictures.html");
     }
     function randomNumber() {
-        randomNumber = Math.round(Math.random()*100);
+
+        /*
+         * randomly generate a number for use on page...
+         * 
+         * **/
+        randomNumber = Math.round(Math.random() * 100);
         return randomNumber;
     }
     function showDate() {
+        /*
+         * show the current date on the home pag of the ComputerIndex.html
+         * **/
 		setInterval(function(){ 
 		document.getElementById("showDate").innerHTML = Date()
 		},1000);
@@ -113,7 +120,12 @@
    
    
    }
-	function switchColour(){
+     function switchColour() {
+        /***
+         * 
+         *Function to switch the colour of the circle on page .... 
+         * 
+         * */
 		var edit = document.getElementById("circle");
 		var value = window.getComputedStyle( edit ,null).getPropertyValue('background-color'); 
 		if(value === "rgb(255, 0, 0)"){
@@ -124,6 +136,10 @@
 		}	
 	}
     function trackMouse(event) {
+        /**
+         track the location of the mouse within the viewport on page ...
+         
+         */
         document.getElementById("clickmee").value = "Stop return mouse location";
 		var x = event.clientX;
         var y = event.clientY;
@@ -139,6 +155,13 @@
         document.getElementById("number").value = " ";
     }
     function whichViewPort() {
+        /**
+         * identify which screen the user is viewing the content from
+         * 
+         * */
+            
+            
+
         var c = window.innerWidth;
         var d = window.innerHeight;
         var e = navigator.platform;
