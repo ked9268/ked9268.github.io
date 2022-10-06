@@ -35,6 +35,9 @@
             var list = document.querySelectorAll("div");
             var size = list.length;
             var array = [];
+            //used to get the media to the front on hover.
+        
+        
             /**for(let i = 0;i < size;i++){
                 var cid = document.getElementById(list.item(i).id);
     
@@ -50,65 +53,43 @@
             window.getComputedStyle(document.getElementById(value),null).getPropertyValue('z-index');
             document.getElementById(value).style.zIndex = see;
             see = see+1;
-            //Set to Two
-            //document.getElementById("kim_kardashian_twitter").style.setProperty("z-index","2")
-            //console.log("Play:        "+window.getComputedStyle(document.getElementById("kim_kardashian_twitter",null)).getPropertyValue('z-index'));
     }
-    function getAllZIndex(){
-        var list = document.querySelectorAll("div");
-        //console.log(list);
-        size = list.length;
-        console.log(size);
+    function printRandomNumber(){
+        setInterval(function(){
+            console.log(randomNumber());
+        },1000);
     
-        for(let i = 0; i < size;i++){
-            //console.log(max);
-        
-            //var cid = document.getElementById(list.item(i).id);
-            //console.log(list.item(i).id);
-            //console.log(cid);
-            //var value = window.getComputedStyle(cid,null).getPropertyValue('z-index');
-            //if(value != 'auto'){
-            //   if(value > max){
-            //      max = value;
-            //   }
-            //}
-        }max = 1;
-            console.log(max);
-            document.getElementById("link").href = "iPhone.css";
     }
-    function pageLoad(){
-            window.location.href("pictures.html");
-    }
-    function randomNumber() {
+    function randomNumber(value) {
 
         /*
          * randomly generate a number for use on page...
          * 
          * **/
-        randomNumber = Math.round(Math.random() * 100);
-        return randomNumber;
+        if(value === null){
+            value == 100;
+            var randomNumber;
+            randomNumber = Math.round(Math.random() * value;
+            return randomNumber;
+        }
+        else{
+            
+            var randomNumber;
+            randomNumber = Math.round(Math.random() * value;
+            return randomNumber;
+            
+        }
     }
     function showDate() {
         /*
-         * show the current date on the home pag of the ComputerIndex.html
+         * show the current date and time on the home page of the ComputerIndex.html
          * **/
 		setInterval(function(){ 
 		document.getElementById("showDate").innerHTML = Date()
 		},1000);
     }
-    function showElements(){
-        console.log(document.getElementById("mainbody").style.display);
-          if(window.getComputedStyle(document.getElementById("mainbody"),null).getPropertyValue('display') === "inline"){
-
-              document.getElementById("mainbody").style.display = " none ";
-          }
-          else{
-              document.getElementById("mainbody").style.display = "inline";
-          }
-    }
     function stopStart(value){
     
-        
         document.getElementById(value).pause();
         console.log(document.getElementById(value).paused);
         if(pause == 1){
@@ -149,11 +130,10 @@
         document.getElementById("showLocation").innerHTML = ret;    
      }
   	function userCustomRandom() {
-	//Return
+                    //Return
         var random = document.getElementById("number").value;
-        var print = Math.round(Math.random() * random);
+        var print = randomNumber(random);
 		document.getElementById("returnValue").innerHTML = print;
-        console.log(print);
         document.getElementById("number").value = " ";
     }
     function whichViewPort() {
@@ -161,9 +141,7 @@
          * identify which screen the user is viewing the content from
          * 
          * */
-            
-            
-
+    
         var c = window.innerWidth;
         screen_width = window.innerWidth;
         var d = window.innerHeight;
