@@ -75,7 +75,7 @@
         else{
             
             var randomNumber;
-            randomNumber = Math.round(Math.random() * value;
+            randomNumber = Math.round(Math.random() * value);
             return randomNumber;
             
         }
