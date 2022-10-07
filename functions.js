@@ -57,7 +57,7 @@
     function printRandomNumber(){
         setInterval(function(){
             console.log(randomNumber());
-        },1000);
+            },1000);
     
     }
     function randomNumber(value) {
@@ -69,7 +69,7 @@
         if(value === null){
             value == 100;
             var randomNumber;
-            randomNumber = Math.round(Math.random() * value;
+            randomNumber = Math.round(Math.random() * value);
             return randomNumber;
         }
         else{
