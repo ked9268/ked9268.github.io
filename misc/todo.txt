@@ -1,3 +1,0 @@
-Make elements draggable
-Stripe payments.
-Dark mode

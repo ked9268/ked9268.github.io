@@ -1,2 +1,0 @@
-ECHO "Hello world!"
-PAUSE
