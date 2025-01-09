@@ -26,15 +26,19 @@
             max-height:450;
           }
           #main_bar{
-
-            position:fixed;
+           
           } 
-          main_bar:hover{
-            display:none;
+          #main_bar:hover{
 
           }
     </style>
+    <script>
+        window.onscroll = function (e) {  
+          document.getElementById("main_bar").style.position="fixed";
+} 
 
+    </script>
+    <link rel="shortcut icon" type="image/png" href="instagram_logo-modified.png" />
   </head>
   <body> 
       <div id="main_bar">
@@ -43,14 +47,17 @@
           <img src="spotify-icon-free-png.png" width="100" height="100">
         </a>
           <a href="music.html">
-          <button type="button" class="btn btn-secondary btn-lg")>MUSIC</button>
+          <button type="button" class="btn btn-secondary btn-lg">MUSIC</button>
           </a>
         <a href="gifs.html">
         <button type="button" class="btn btn-primary btn-lg">GIFS</button>   
         </a>
 
         <a href="signup.html">
-          <button type="button" class="btn btn-secondary btn-lg" href="signup.html">TRADING</button>
+          <button type="button" class="btn btn-secondary btn-lg">TRADING</button>
+        </a>
+        <a href="login.html">
+          <button type="button" class="btn btn-primary btn-lg">LOG IN</button>
         </a>
       </div>
     <br><br>
@@ -58,7 +65,7 @@
     <iframe src="https://coinsalad.com/tools/price-widget-embed" frameborder="0" height="60" scrolling="no"></iframe>
     <br>
     <!-- Random giphys-->
-    <img src="giphy.gif" width="60%" heighHow do you committ="60%" alt="This can't be shwon for some reason  ">
+    <img src="giphy.gif" width="60%" height="60%" alt="This can't be shwon for some reason  ">
     <br>
     <iframe src="https://giphy.com/embed/3CCXHZWV6F6O9VQ7FL" width="60%" height="60%"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
     <br>
